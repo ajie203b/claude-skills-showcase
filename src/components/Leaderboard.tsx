@@ -1,4 +1,4 @@
-import { useMemo, useCallback } from 'react'
+import { useMemo, useCallback, useState } from 'react'
 import type { Skill } from '../types/skill'
 import usageData from '../data/usage.json'
 import allSkillsData from '../data/skills.json'
@@ -11,12 +11,17 @@ interface LeaderboardItem {
 }
 
 export function Leaderboard() {
+  const [tooltip, setTooltip] = useState<string | null>(null)
+
   const scrollToSkill = useCallback((skillId: string) => {
     const element = document.getElementById(`skill-${skillId}`)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'center' })
       element.style.boxShadow = '0 0 0 2px var(--indigo-500), var(--shadow-lg)'
       setTimeout(() => { element.style.boxShadow = '' }, 2000)
+    } else {
+      setTooltip(skillId)
+      setTimeout(() => setTooltip(null), 2000)
     }
   }, [])
 
@@ -46,6 +51,13 @@ export function Leaderboard() {
         <h2 className="text-sm font-bold text-[var(--gray-800)]">使用排行榜</h2>
         <span className="ml-auto text-[0.6rem] text-[var(--gray-400)]">Top 12</span>
       </div>
+
+      {/* 技能不在当前视图的提示 */}
+      {tooltip && (
+        <div className="mb-2 px-2 py-1.5 bg-amber-50 border border-amber-200 rounded text-[0.6rem] text-amber-700 text-center">
+          "{tooltip}" 不在当前筛选视图中，请切换到"全部"查看
+        </div>
+      )}
 
       <div className="space-y-0.5">
         {leaderboard.map((item) => (

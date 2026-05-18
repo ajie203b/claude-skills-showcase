@@ -36,9 +36,9 @@ function App() {
       {/* 主内容区 */}
       <main className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {activeTab === 'skills' ? (
-          <div className="flex flex-col lg:flex-row gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
             {/* 左侧：控制面板 + 技能网格 */}
-            <div className="flex-1 min-w-0">
+            <div className="min-w-0">
               {/* 控制面板 */}
               <div className="card p-4 sm:p-5 mb-6">
                 <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
@@ -72,7 +72,7 @@ function App() {
             </div>
 
             {/* 右侧：排行榜（仅桌面端显示） */}
-            <aside className="hidden lg:block w-80 flex-shrink-0">
+            <aside className="hidden lg:block">
               <div className="sticky top-[85px]">
                 <Leaderboard />
               </div>

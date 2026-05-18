@@ -85,15 +85,20 @@ function mergeWithExisting(newUsage: UsageMap): UsageMap {
     try {
       const content = fs.readFileSync(OUTPUT_FILE, 'utf-8')
       existingUsage = JSON.parse(content)
-    } catch {
-      console.log('No existing usage.json found, starting fresh')
+      console.log(`Loaded existing usage data: ${Object.keys(existingUsage).length} skills`)
+    } catch (e) {
+      console.log(`Failed to parse existing usage.json: ${e}`)
+      console.log('Starting fresh')
     }
+  } else {
+    console.log('No existing usage.json found, starting fresh')
   }
 
-  // 合并数据（累加）
+  // 合并数据（累加，只添加新数据，不覆盖已有）
   const merged: UsageMap = { ...existingUsage }
 
   for (const [skillId, count] of Object.entries(newUsage)) {
+    // 只累加，不覆盖已有数据
     merged[skillId] = (merged[skillId] || 0) + count
   }
 
