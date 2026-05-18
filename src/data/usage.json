@@ -1,0 +1,12 @@
+{
+  "general-purpose": 7,
+  "Explore": 6,
+  "claude-api": 2,
+  "security-review": 2,
+  "statusline-setup": 2,
+  "Plan": 2,
+  "skill-creator": 1,
+  "exam-prep": 1,
+  "tdd-workflow": 1,
+  "build-error-resolver": 1
+}

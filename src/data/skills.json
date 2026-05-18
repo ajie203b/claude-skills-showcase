@@ -1,0 +1,3571 @@
+[
+  {
+    "id": "article-writing",
+    "name": "article-writing",
+    "description": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "内容创作",
+      "设计/视觉",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "drafting blog posts, essays, launch posts, guides, tutorials, or newsletter issues",
+      "turning notes, transcripts, or research into polished articles",
+      "matching an existing founder, operator, or brand voice from examples",
+      "tightening structure, pacing, and evidence in already-written long-form copy"
+    ],
+    "filePath": "/article-writing/SKILL.md"
+  },
+  {
+    "id": "backend-patterns",
+    "name": "backend-patterns",
+    "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "API 设计",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Designing REST or GraphQL API endpoints",
+      "Implementing repository, service, or controller layers",
+      "Optimizing database queries (N+1, indexing, connection pooling)",
+      "Adding caching (Redis, in-memory, HTTP cache headers)",
+      "Setting up background jobs or async processing"
+    ],
+    "filePath": "/backend-patterns/SKILL.md"
+  },
+  {
+    "id": "coding-standards",
+    "name": "coding-standards",
+    "description": "Baseline cross-project coding conventions for naming, readability, immutability, and code-quality review. Use detailed frontend or backend skills for framework-specific patterns.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "前端",
+      "测试/质量",
+      "部署/运维",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Starting a new project or module",
+      "Reviewing code for quality and maintainability",
+      "Refactoring existing code to follow conventions",
+      "Enforcing naming, formatting, or structural consistency",
+      "Setting up linting, formatting, or type-checking rules"
+    ],
+    "filePath": "/coding-standards/SKILL.md"
+  },
+  {
+    "id": "content-engine",
+    "name": "content-engine",
+    "description": "Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. Use when the user wants social posts, threads, scripts, content calendars, or one source asset adapted cleanly across platforms.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "writing X posts or threads",
+      "drafting LinkedIn posts or launch updates",
+      "scripting short-form video or YouTube explainers",
+      "repurposing articles, podcasts, demos, docs, or internal notes into public content",
+      "building a launch sequence or ongoing content system around a product, insight, or narrative"
+    ],
+    "filePath": "/content-engine/SKILL.md"
+  },
+  {
+    "id": "continuous-learning-v2",
+    "name": "continuous-learning-v2",
+    "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up automatic learning from Claude Code sessions",
+      "Configuring instinct-based behavior extraction via hooks",
+      "Tuning confidence thresholds for learned behaviors",
+      "Reviewing, exporting, or importing instinct libraries",
+      "Evolving instincts into full skills, commands, or agents"
+    ],
+    "filePath": "/continuous-learning-v2/SKILL.md"
+  },
+  {
+    "id": "crosspost",
+    "name": "crosspost",
+    "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants to publish the same underlying idea across multiple platforms",
+      "a launch, update, release, or essay needs platform-specific versions",
+      "the user says \"crosspost\", \"post this everywhere\", or \"adapt this for X and LinkedIn\""
+    ],
+    "filePath": "/crosspost/SKILL.md"
+  },
+  {
+    "id": "deep-research",
+    "name": "deep-research",
+    "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User asks to research any topic in depth",
+      "Competitive analysis, technology evaluation, or market sizing",
+      "Due diligence on companies, investors, or technologies",
+      "Any question requiring synthesis from multiple sources",
+      "User says \"research\", \"deep dive\", \"investigate\", or \"what's the current state of\""
+    ],
+    "filePath": "/deep-research/SKILL.md"
+  },
+  {
+    "id": "django-patterns",
+    "name": "django-patterns",
+    "description": "Django architecture patterns, REST API design with DRF, ORM best practices, caching, signals, middleware, and production-grade Django apps.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Django web applications",
+      "Designing Django REST Framework APIs",
+      "Working with Django ORM and models",
+      "Setting up Django project structure",
+      "Implementing caching, signals, middleware"
+    ],
+    "filePath": "/django-patterns/SKILL.md"
+  },
+  {
+    "id": "django-security",
+    "name": "django-security",
+    "description": "Django security best practices, authentication, authorization, CSRF protection, SQL injection prevention, XSS prevention, and secure deployment configurations.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "安全",
+      "部署/运维",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up Django authentication and authorization",
+      "Implementing user permissions and roles",
+      "Configuring production security settings",
+      "Reviewing Django application for security issues",
+      "Deploying Django applications to production"
+    ],
+    "filePath": "/django-security/SKILL.md"
+  },
+  {
+    "id": "django-tdd",
+    "name": "django-tdd",
+    "description": "Django testing strategies with pytest-django, TDD methodology, factory_boy, mocking, coverage, and testing Django REST Framework APIs.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Django applications",
+      "Implementing Django REST Framework APIs",
+      "Testing Django models, views, and serializers",
+      "Setting up testing infrastructure for Django projects"
+    ],
+    "filePath": "/django-tdd/SKILL.md"
+  },
+  {
+    "id": "django-verification",
+    "name": "django-verification",
+    "description": "Verification loop for Django projects: migrations, linting, tests with coverage, security scans, and deployment readiness checks before release or PR.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "部署/运维",
+      "Agent/工作流",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Before opening a pull request for a Django project",
+      "After major model changes, migration updates, or dependency upgrades",
+      "Pre-deployment verification for staging or production",
+      "Running full environment → lint → test → security → deploy readiness pipeline",
+      "Validating migration safety and test coverage"
+    ],
+    "filePath": "/django-verification/SKILL.md"
+  },
+  {
+    "id": "dmux-workflows",
+    "name": "dmux-workflows",
+    "description": "Multi-agent orchestration using dmux (tmux pane manager for AI agents). Patterns for parallel agent workflows across Claude Code, Codex, OpenCode, and other harnesses. Use when running multiple agent sessions in parallel or coordinating multi-agent development workflows.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Running multiple agent sessions in parallel",
+      "Coordinating work across Claude Code, Codex, and other harnesses",
+      "Complex tasks that benefit from divide-and-conquer parallelism",
+      "User says \"run in parallel\", \"split this work\", \"use dmux\", or \"multi-agent\""
+    ],
+    "filePath": "/dmux-workflows/SKILL.md"
+  },
+  {
+    "id": "agent-harness-construction",
+    "name": "agent-harness-construction",
+    "description": "Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/agent-harness-construction/SKILL.md"
+  },
+  {
+    "id": "agent-introspection-debugging",
+    "name": "agent-introspection-debugging",
+    "description": "Structured self-debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Maximum tool call / loop-limit failures",
+      "Repeated retries with no forward progress",
+      "Context growth or prompt drift that starts degrading output quality",
+      "File-system or environment state mismatch between expectation and reality",
+      "Tool failures that are likely recoverable with diagnosis and a smaller corrective action"
+    ],
+    "filePath": "/ecc/agent-introspection-debugging/SKILL.md"
+  },
+  {
+    "id": "agent-sort",
+    "name": "agent-sort",
+    "description": "Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo-aware review passes. Use when ECC should be trimmed to what a project actually needs instead of loading the full bundle.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "Agent/工作流",
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "A project only needs a subset of ECC and full installs are too noisy",
+      "The repo stack is clear, but nobody wants to hand-curate skills one by one",
+      "A team wants a repeatable install decision backed by grep evidence instead of opinion",
+      "You need to separate always-loaded daily workflow surfaces from searchable library/reference surfaces",
+      "A repo has drifted into the wrong language, rule, or hook set and needs cleanup"
+    ],
+    "filePath": "/ecc/agent-sort/SKILL.md"
+  },
+  {
+    "id": "agentic-engineering",
+    "name": "agentic-engineering",
+    "description": "Operate as an agentic engineer using eval-first execution, decomposition, and cost-aware model routing.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/agentic-engineering/SKILL.md"
+  },
+  {
+    "id": "ai-first-engineering",
+    "name": "ai-first-engineering",
+    "description": "Engineering operating model for teams where AI agents generate a large share of implementation output.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/ai-first-engineering/SKILL.md"
+  },
+  {
+    "id": "ai-regression-testing",
+    "name": "ai-regression-testing",
+    "description": "Regression testing strategies for AI-assisted development. Sandbox-mode API testing without database dependencies, automated bug-check workflows, and patterns to catch AI blind spots where the same model writes and reviews code.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "API 设计",
+      "Agent/工作流",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "AI agent (Claude Code, Cursor, Codex) has modified API routes or backend logic",
+      "A bug was found and fixed — need to prevent re-introduction",
+      "Project has a sandbox/mock mode that can be leveraged for DB-free testing",
+      "Running `/bug-check` or similar review commands after code changes",
+      "Multiple code paths exist (sandbox vs production, feature flags, etc.)"
+    ],
+    "filePath": "/ecc/ai-regression-testing/SKILL.md"
+  },
+  {
+    "id": "android-clean-architecture",
+    "name": "android-clean-architecture",
+    "description": "Clean Architecture patterns for Android and Kotlin Multiplatform projects — module structure, dependency rules, UseCases, Repositories, and data layer patterns.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Structuring Android or KMP project modules",
+      "Implementing UseCases, Repositories, or DataSources",
+      "Designing data flow between layers (domain, data, presentation)",
+      "Setting up dependency injection with Koin or Hilt",
+      "Working with Room, SQLDelight, or Ktor in a layered architecture"
+    ],
+    "filePath": "/ecc/android-clean-architecture/SKILL.md"
+  },
+  {
+    "id": "api-connector-builder",
+    "name": "api-connector-builder",
+    "description": "Build a new API connector or provider by matching the target repo's existing integration pattern exactly. Use when adding one more integration without inventing a second architecture.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "\"Build a Jira connector for this project\"",
+      "\"Add a Slack provider following the existing pattern\"",
+      "\"Create a new integration for this API\"",
+      "\"Build a plugin that matches the repo's connector style\""
+    ],
+    "filePath": "/ecc/api-connector-builder/SKILL.md"
+  },
+  {
+    "id": "api-design",
+    "name": "api-design",
+    "description": "REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Designing new API endpoints",
+      "Reviewing existing API contracts",
+      "Adding pagination, filtering, or sorting",
+      "Implementing error handling for APIs",
+      "Planning API versioning strategy"
+    ],
+    "filePath": "/ecc/api-design/SKILL.md"
+  },
+  {
+    "id": "automation-audit-ops",
+    "name": "automation-audit-ops",
+    "description": "Evidence-first automation inventory and overlap audit workflow for ECC. Use when the user wants to know which jobs, hooks, connectors, MCP servers, or wrappers are live, broken, redundant, or missing before fixing anything.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计",
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user asks \"what automations do I have\", \"what is live\", \"what is broken\", or \"what overlaps\"",
+      "the task spans cron jobs, GitHub Actions, local hooks, MCP servers, connectors, wrappers, or app integrations",
+      "the user wants to know what was ported from another agent system and what still needs to be rebuilt inside ECC",
+      "the workspace has accumulated multiple ways to do the same thing and the user wants one canonical lane"
+    ],
+    "filePath": "/ecc/automation-audit-ops/SKILL.md"
+  },
+  {
+    "id": "autonomous-loops",
+    "name": "autonomous-loops",
+    "description": "Patterns and architectures for autonomous Claude Code loops — from simple sequential pipelines to RFC-driven multi-agent DAG systems.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up autonomous development workflows that run without human intervention",
+      "Choosing the right loop architecture for your problem (simple vs complex)",
+      "Building CI/CD-style continuous development pipelines",
+      "Running parallel agents with merge coordination",
+      "Implementing context persistence across loop iterations"
+    ],
+    "filePath": "/ecc/autonomous-loops/SKILL.md"
+  },
+  {
+    "id": "blueprint",
+    "name": "blueprint",
+    "description": "Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects. Each step has a self-contained context brief so a fresh agent can execute it cold. Includes adversarial review gate, dependency graph, parallel step detection, anti-pattern catalog, and plan mutation protocol. TRIGGER when: user requests a plan, blueprint, or roadmap for a complex multi-PR task, or describes work that needs multiple sessions. DO NOT TRIGGER when: task is completable in a single PR or fewer than 3 tool calls, or user says \"just do it\".",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Breaking a large feature into multiple PRs with clear dependency order",
+      "Planning a refactor or migration that spans multiple sessions",
+      "Coordinating parallel workstreams across sub-agents",
+      "Any task where context loss between sessions would cause rework"
+    ],
+    "filePath": "/ecc/blueprint/SKILL.md"
+  },
+  {
+    "id": "brand-voice",
+    "name": "brand-voice",
+    "description": "Build a source-derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows. Use when the user wants voice consistency without generic AI writing tropes.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "Agent/工作流",
+      "设计/视觉",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants content or outreach in a specific voice",
+      "writing for X, LinkedIn, email, launch posts, threads, or product updates",
+      "adapting a known author's tone across channels",
+      "the existing content lane needs a reusable style system instead of one-off mimicry"
+    ],
+    "filePath": "/ecc/brand-voice/SKILL.md"
+  },
+  {
+    "id": "carrier-relationship-management",
+    "name": "carrier-relationship-management",
+    "description": "Codified expertise for managing carrier portfolios, negotiating freight rates, tracking carrier performance, allocating freight, and maintaining strategic carrier relationships. Informed by transportation managers with 15+ years experience. Includes scorecarding frameworks, RFP processes, market intelligence, and compliance vetting. Use when managing carriers, negotiating rates, evaluating carrier performance, or building freight strategies.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "设计/视觉",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Onboarding a new carrier and vetting safety, insurance, and authority",
+      "Running an annual or lane-specific RFP for rate benchmarking",
+      "Building or updating carrier scorecards and performance reviews",
+      "Reallocating freight during tight capacity or carrier underperformance",
+      "Negotiating rate increases, fuel surcharges, or accessorial schedules"
+    ],
+    "filePath": "/ecc/carrier-relationship-management/SKILL.md"
+  },
+  {
+    "id": "cisco-ios-patterns",
+    "name": "cisco-ios-patterns",
+    "description": "Cisco IOS and IOS-XE review patterns for show commands, config hierarchy, wildcard masks, ACL placement, interface hygiene, and safe change-window verification.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Reviewing IOS or IOS-XE configuration before a planned change.",
+      "Choosing read-only `show` commands for troubleshooting.",
+      "Checking ACL wildcard masks and interface direction.",
+      "Explaining global, interface, routing process, and line configuration modes.",
+      "Verifying that a change landed in running config and was saved intentionally."
+    ],
+    "filePath": "/ecc/cisco-ios-patterns/SKILL.md"
+  },
+  {
+    "id": "claude-devfleet",
+    "name": "claude-devfleet",
+    "description": "Orchestrate multi-agent coding tasks via Claude DevFleet — plan projects, dispatch parallel agents in isolated worktrees, monitor progress, and read structured reports.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/claude-devfleet/SKILL.md"
+  },
+  {
+    "id": "clickhouse-io",
+    "name": "clickhouse-io",
+    "description": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Designing ClickHouse table schemas (MergeTree engine selection)",
+      "Writing analytical queries (aggregations, window functions, joins)",
+      "Optimizing query performance (partition pruning, projections, materialized views)",
+      "Ingesting large volumes of data (batch inserts, Kafka integration)",
+      "Migrating from PostgreSQL/MySQL to ClickHouse for analytics"
+    ],
+    "filePath": "/ecc/clickhouse-io/SKILL.md"
+  },
+  {
+    "id": "code-tour",
+    "name": "code-tour",
+    "description": "Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors. Use for onboarding tours, architecture walkthroughs, PR tours, RCA tours, and structured \"explain how this works\" requests.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "其他"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user asks for a code tour, onboarding tour, architecture walkthrough, or PR tour",
+      "the user says \"explain how X works\" and wants a reusable guided artifact",
+      "the user wants a ramp-up path for a new engineer or reviewer",
+      "the task is better served by a guided sequence than a flat summary",
+      "onboarding a new maintainer"
+    ],
+    "filePath": "/ecc/code-tour/SKILL.md"
+  },
+  {
+    "id": "compose-multiplatform-patterns",
+    "name": "compose-multiplatform-patterns",
+    "description": "Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and platform-specific UI.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Compose UI (Jetpack Compose or Compose Multiplatform)",
+      "Managing UI state with ViewModels and Compose state",
+      "Implementing navigation in KMP or Android projects",
+      "Designing reusable composables and design systems",
+      "Optimizing recomposition and rendering performance"
+    ],
+    "filePath": "/ecc/compose-multiplatform-patterns/SKILL.md"
+  },
+  {
+    "id": "configure-ecc",
+    "name": "configure-ecc",
+    "description": "Interactive installer for Everything Claude Code — guides users through selecting and installing skills and rules to user-level or project-level directories, verifies paths, and optionally optimizes installed files.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User says \"configure ecc\", \"install ecc\", \"setup everything claude code\", or similar",
+      "User wants to selectively install skills or rules from this project",
+      "User wants to verify or fix an existing ECC installation",
+      "User wants to optimize installed skills or rules for their project"
+    ],
+    "filePath": "/ecc/configure-ecc/SKILL.md"
+  },
+  {
+    "id": "connections-optimizer",
+    "name": "connections-optimizer",
+    "description": "Reorganize the user's X and LinkedIn network with review-first pruning, add/follow recommendations, and channel-specific warm outreach drafted in the user's real voice. Use when the user wants to clean up following lists, grow toward current priorities, or rebalance a social graph around higher-signal relationships.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "网络",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants to prune their X following",
+      "the user wants to rebalance who they follow or stay connected to",
+      "the user says \"clean up my network\", \"who should I unfollow\", \"who should I follow\", \"who should I reconnect with\"",
+      "outreach quality depends on network structure, not just cold list generation"
+    ],
+    "filePath": "/ecc/connections-optimizer/SKILL.md"
+  },
+  {
+    "id": "content-hash-cache-pattern",
+    "name": "content-hash-cache-pattern",
+    "description": "Cache expensive file processing results using SHA-256 content hashes — path-independent, auto-invalidating, with service layer separation.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "内容创作",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building file processing pipelines (PDF, images, text extraction)",
+      "Processing cost is high and same files are processed repeatedly",
+      "Need a `--cache/--no-cache` CLI option",
+      "Want to add caching to existing pure functions without modifying them"
+    ],
+    "filePath": "/ecc/content-hash-cache-pattern/SKILL.md"
+  },
+  {
+    "id": "continuous-agent-loop",
+    "name": "continuous-agent-loop",
+    "description": "Patterns for continuous autonomous agent loops with quality gates, evals, and recovery controls.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/continuous-agent-loop/SKILL.md"
+  },
+  {
+    "id": "continuous-learning",
+    "name": "continuous-learning",
+    "description": "[DEPRECATED - use continuous-learning-v2] Legacy v1 stop-hook skill extractor. v2 is a strict superset with instinct-based, project-scoped, hook-reliable learning. Do not invoke v1; route continuous learning, session learning, and pattern extraction requests to continuous-learning-v2.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up automatic pattern extraction from Claude Code sessions",
+      "Configuring the Stop hook for session evaluation",
+      "Reviewing or curating learned skills in `~/.claude/skills/learned/`",
+      "Adjusting extraction thresholds or pattern categories",
+      "Comparing v1 (this) vs v2 (instinct-based) approaches"
+    ],
+    "filePath": "/ecc/continuous-learning/SKILL.md"
+  },
+  {
+    "id": "cost-aware-llm-pipeline",
+    "name": "cost-aware-llm-pipeline",
+    "description": "Cost optimization patterns for LLM API usage — model routing by task complexity, budget tracking, retry logic, and prompt caching.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building applications that call LLM APIs (Claude, GPT, etc.)",
+      "Processing batches of items with varying complexity",
+      "Need to stay within a budget for API spend",
+      "Optimizing cost without sacrificing quality on complex tasks"
+    ],
+    "filePath": "/ecc/cost-aware-llm-pipeline/SKILL.md"
+  },
+  {
+    "id": "council",
+    "name": "council",
+    "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "a decision has multiple credible paths and no obvious winner",
+      "you need explicit tradeoff surfacing",
+      "the user asks for second opinions, dissent, or multiple perspectives",
+      "conversational anchoring is a real risk",
+      "a go / no-go call would benefit from adversarial challenge"
+    ],
+    "filePath": "/ecc/council/SKILL.md"
+  },
+  {
+    "id": "cpp-coding-standards",
+    "name": "cpp-coding-standards",
+    "description": "C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code to enforce modern, safe, and idiomatic practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "内容创作",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new C++ code (classes, functions, templates)",
+      "Reviewing or refactoring existing C++ code",
+      "Making architectural decisions in C++ projects",
+      "Enforcing consistent style across a C++ codebase",
+      "Choosing between language features (e.g., `enum` vs `enum class`, raw pointer vs smart pointer)"
+    ],
+    "filePath": "/ecc/cpp-coding-standards/SKILL.md"
+  },
+  {
+    "id": "cpp-testing",
+    "name": "cpp-testing",
+    "description": "Use only when writing/updating/fixing C++ tests, configuring GoogleTest/CTest, diagnosing failing or flaky tests, or adding coverage/sanitizers.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "内容创作"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new C++ tests or fixing existing tests",
+      "Designing unit/integration test coverage for C++ components",
+      "Adding test coverage, CI gating, or regression protection",
+      "Configuring CMake/CTest workflows for consistent execution",
+      "Investigating test failures or flaky behavior"
+    ],
+    "filePath": "/ecc/cpp-testing/SKILL.md"
+  },
+  {
+    "id": "csharp-testing",
+    "name": "csharp-testing",
+    "description": "C# and .NET testing patterns with xUnit, FluentAssertions, mocking, integration tests, and test organization best practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new tests for C# code",
+      "Reviewing test quality and coverage",
+      "Setting up test infrastructure for .NET projects",
+      "Debugging flaky or slow tests"
+    ],
+    "filePath": "/ecc/csharp-testing/SKILL.md"
+  },
+  {
+    "id": "customer-billing-ops",
+    "name": "customer-billing-ops",
+    "description": "Operate customer billing workflows such as subscriptions, refunds, churn triage, billing-portal recovery, and plan analysis using connected billing tools like Stripe. Use when the user needs to help a customer, inspect subscription state, or manage revenue-impacting billing operations.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "商业/投资",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Customer says billing is broken, they want a refund, or they cannot cancel",
+      "Investigating duplicate subscriptions, accidental charges, failed renewals, or churn risk",
+      "Reviewing plan mix, active subscriptions, yearly vs monthly conversion, or team-seat confusion",
+      "Creating or validating a billing portal flow",
+      "Auditing support complaints that touch subscriptions, invoices, refunds, or payment methods"
+    ],
+    "filePath": "/ecc/customer-billing-ops/SKILL.md"
+  },
+  {
+    "id": "customs-trade-compliance",
+    "name": "customs-trade-compliance",
+    "description": "Codified expertise for customs documentation, tariff classification, duty optimization, restricted party screening, and regulatory compliance across multiple jurisdictions. Informed by trade compliance specialists with 15+ years experience. Includes HS classification logic, Incoterms application, FTA utilization, and penalty mitigation. Use when handling customs clearance, tariff classification, trade compliance, import/export documentation, or duty optimization.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Classifying goods under HS/HTS tariff codes for import or export",
+      "Preparing customs documentation (commercial invoices, certificates of origin, ISF filings)",
+      "Screening parties against denied/restricted entity lists (SDN, Entity List, EU sanctions)",
+      "Evaluating FTA qualification and duty savings opportunities",
+      "Responding to customs audits, CF-28/CF-29 requests, or penalty notices"
+    ],
+    "filePath": "/ecc/customs-trade-compliance/SKILL.md"
+  },
+  {
+    "id": "dart-flutter-patterns",
+    "name": "dart-flutter-patterns",
+    "description": "Production-ready Dart and Flutter patterns covering null safety, immutable state, async composition, widget architecture, popular state management frameworks (BLoC, Riverpod, Provider), GoRouter navigation, Dio networking, Freezed code generation, and clean architecture.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Starting a new Flutter feature and need idiomatic patterns for state management, navigation, or data access",
+      "Reviewing or writing Dart code and need guidance on null safety, sealed types, or async composition",
+      "Setting up a new Flutter project and choosing between BLoC, Riverpod, or Provider",
+      "Implementing secure HTTP clients, WebView integration, or local storage",
+      "Writing tests for Flutter widgets, Cubits, or Riverpod providers"
+    ],
+    "filePath": "/ecc/dart-flutter-patterns/SKILL.md"
+  },
+  {
+    "id": "dashboard-builder",
+    "name": "dashboard-builder",
+    "description": "Build monitoring dashboards that answer real operator questions for Grafana, SigNoz, and similar platforms. Use when turning metrics into a working dashboard instead of a vanity board.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "\"Build a Kafka monitoring dashboard\"",
+      "\"Create a Grafana dashboard for Elasticsearch\"",
+      "\"Make a SigNoz dashboard for this service\"",
+      "\"Turn this metrics list into a real operational dashboard\""
+    ],
+    "filePath": "/ecc/dashboard-builder/SKILL.md"
+  },
+  {
+    "id": "data-scraper-agent",
+    "name": "data-scraper-agent",
+    "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Scrapes on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to scrape or monitor any public website or API",
+      "User says \"build a bot that checks...\", \"monitor X for me\", \"collect data from...\"",
+      "User wants to track jobs, prices, news, repos, sports scores, events, listings",
+      "User asks how to automate data collection without paying for hosting",
+      "User wants an agent that gets smarter over time based on their decisions"
+    ],
+    "filePath": "/ecc/data-scraper-agent/SKILL.md"
+  },
+  {
+    "id": "database-migrations",
+    "name": "database-migrations",
+    "description": "Database migration best practices for schema changes, data migrations, rollbacks, and zero-downtime deployments across PostgreSQL, MySQL, and common ORMs (Prisma, Drizzle, Kysely, Django, TypeORM, golang-migrate).",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "语言/平台",
+      "部署/运维",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Creating or altering database tables",
+      "Adding/removing columns or indexes",
+      "Running data migrations (backfill, transform)",
+      "Planning zero-downtime schema changes",
+      "Setting up migration tooling for a new project"
+    ],
+    "filePath": "/ecc/database-migrations/SKILL.md"
+  },
+  {
+    "id": "defi-amm-security",
+    "name": "defi-amm-security",
+    "description": "Security checklist for Solidity AMM contracts, liquidity pools, and swap flows. Covers reentrancy, CEI ordering, donation or inflation attacks, oracle manipulation, slippage, admin controls, and integer math.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing or auditing a Solidity AMM or liquidity-pool contract",
+      "Implementing swap, deposit, withdraw, mint, or burn flows that hold token balances",
+      "Reviewing any contract that uses `token.balanceOf(address(this))` in share or reserve math",
+      "Adding fee setters, pausers, oracle updates, or other admin functions to a DeFi protocol"
+    ],
+    "filePath": "/ecc/defi-amm-security/SKILL.md"
+  },
+  {
+    "id": "deployment-patterns",
+    "name": "deployment-patterns",
+    "description": "Deployment workflows, CI/CD pipeline patterns, Docker containerization, health checks, rollback strategies, and production readiness checklists for web applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up CI/CD pipelines",
+      "Dockerizing an application",
+      "Planning deployment strategy (blue-green, canary, rolling)",
+      "Implementing health checks and readiness probes",
+      "Preparing for a production release"
+    ],
+    "filePath": "/ecc/deployment-patterns/SKILL.md"
+  },
+  {
+    "id": "docker-patterns",
+    "name": "docker-patterns",
+    "description": "Docker and Docker Compose patterns for local development, container security, networking, volume strategies, and multi-service orchestration.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "Agent/工作流",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up Docker Compose for local development",
+      "Designing multi-container architectures",
+      "Troubleshooting container networking or volume issues",
+      "Reviewing Dockerfiles for security and size",
+      "Migrating from local dev to containerized workflow"
+    ],
+    "filePath": "/ecc/docker-patterns/SKILL.md"
+  },
+  {
+    "id": "dotnet-patterns",
+    "name": "dotnet-patterns",
+    "description": "Idiomatic C# and .NET patterns, conventions, dependency injection, async/await, and best practices for building robust, maintainable .NET applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new C# code",
+      "Reviewing C# code",
+      "Refactoring existing .NET applications",
+      "Designing service architectures with ASP.NET Core"
+    ],
+    "filePath": "/ecc/dotnet-patterns/SKILL.md"
+  },
+  {
+    "id": "e2e-testing",
+    "name": "e2e-testing",
+    "description": "Playwright E2E testing patterns, Page Object Model, configuration, CI/CD integration, artifact management, and flaky test strategies.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/e2e-testing/SKILL.md"
+  },
+  {
+    "id": "ecc-tools-cost-audit",
+    "name": "ecc-tools-cost-audit",
+    "description": "Evidence-first ECC Tools burn and billing audit workflow. Use when investigating runaway PR creation, quota bypass, premium-model leakage, duplicate jobs, or GitHub App cost spikes in the ECC Tools repo.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "商业/投资",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/ecc-tools-cost-audit/SKILL.md"
+  },
+  {
+    "id": "email-ops",
+    "name": "email-ops",
+    "description": "Evidence-first mailbox triage, drafting, send verification, and sent-mail-safe follow-up workflow for ECC. Use when the user wants to organize email, draft or send through the real mail surface, or prove what landed in Sent.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user asks to triage inbox or archive low-signal mail",
+      "user wants a draft, reply, or new outbound email",
+      "user wants to know whether a mail was already sent",
+      "the user wants proof of which account, thread, or Sent entry was used"
+    ],
+    "filePath": "/ecc/email-ops/SKILL.md"
+  },
+  {
+    "id": "energy-procurement",
+    "name": "energy-procurement",
+    "description": "Codified expertise for electricity and gas procurement, tariff optimization, demand charge management, renewable PPA evaluation, and multi-facility energy cost management. Informed by energy procurement managers with 15+ years experience at large commercial and industrial consumers. Includes market structure analysis, hedging strategies, load profiling, and sustainability reporting frameworks. Use when procuring energy, optimizing tariffs, managing demand charges, evaluating PPAs, or developing energy strategies.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Running an RFP for electricity or natural gas supply across multiple facilities",
+      "Analyzing tariff structures and rate schedule optimization opportunities",
+      "Evaluating demand charge mitigation strategies (load shifting, battery storage, power factor correction)",
+      "Assessing PPA (Power Purchase Agreement) offers for on-site or virtual renewable energy",
+      "Building annual energy budgets and hedge position strategies"
+    ],
+    "filePath": "/ecc/energy-procurement/SKILL.md"
+  },
+  {
+    "id": "enterprise-agent-ops",
+    "name": "enterprise-agent-ops",
+    "description": "Operate long-lived agent workloads with observability, security boundaries, and lifecycle management.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/enterprise-agent-ops/SKILL.md"
+  },
+  {
+    "id": "eval-harness",
+    "name": "eval-harness",
+    "description": "Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up eval-driven development (EDD) for AI-assisted workflows",
+      "Defining pass/fail criteria for Claude Code task completion",
+      "Measuring agent reliability with pass@k metrics",
+      "Creating regression test suites for prompt or agent changes",
+      "Benchmarking agent performance across model versions"
+    ],
+    "filePath": "/ecc/eval-harness/SKILL.md"
+  },
+  {
+    "id": "evm-token-decimals",
+    "name": "evm-token-decimals",
+    "description": "Prevent silent decimal mismatch bugs across EVM chains. Covers runtime decimal lookup, chain-aware caching, bridged-token precision drift, and safe normalization for bots, dashboards, and DeFi tools.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Reading ERC-20 balances in Python, TypeScript, or Solidity",
+      "Calculating fiat values from on-chain balances",
+      "Comparing token amounts across multiple EVM chains",
+      "Handling bridged assets",
+      "Building portfolio trackers, bots, or aggregators"
+    ],
+    "filePath": "/ecc/evm-token-decimals/SKILL.md"
+  },
+  {
+    "id": "exa-search",
+    "name": "exa-search",
+    "description": "Neural search via Exa MCP for web, code, and company research. Use when the user needs web search, code examples, company intel, people lookup, or AI-powered deep research with Exa's neural search engine.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User needs current web information or news",
+      "Searching for code examples, API docs, or technical references",
+      "Researching companies, competitors, or market players",
+      "Finding professional profiles or people in a domain",
+      "Running background research for any development task"
+    ],
+    "filePath": "/ecc/exa-search/SKILL.md"
+  },
+  {
+    "id": "fal-ai-media",
+    "name": "fal-ai-media",
+    "description": "Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (Seedance, Kling, Veo 3), text-to-speech (CSM-1B), and video-to-audio (ThinkSound). Use when the user wants to generate images, videos, or audio with AI.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to generate images from text prompts",
+      "Creating videos from text or images",
+      "Generating speech, music, or sound effects",
+      "Any media generation task",
+      "User says \"generate image\", \"create video\", \"text to speech\", \"make a thumbnail\", or similar"
+    ],
+    "filePath": "/ecc/fal-ai-media/SKILL.md"
+  },
+  {
+    "id": "fastapi-patterns",
+    "name": "fastapi-patterns",
+    "description": "FastAPI patterns for async APIs, dependency injection, Pydantic request and response models, OpenAPI docs, tests, security, and production readiness.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building or reviewing a FastAPI app.",
+      "Splitting routers, schemas, dependencies, and database access.",
+      "Writing async endpoints that call a database or external service.",
+      "Adding authentication, authorization, OpenAPI docs, tests, or deployment settings.",
+      "Checking a FastAPI PR for copy-pasteable examples and production risks."
+    ],
+    "filePath": "/ecc/fastapi-patterns/SKILL.md"
+  },
+  {
+    "id": "finance-billing-ops",
+    "name": "finance-billing-ops",
+    "description": "Evidence-first revenue, pricing, refunds, team-billing, and billing-model truth workflow for ECC. Use when the user wants a sales snapshot, pricing comparison, duplicate-charge diagnosis, or code-backed billing reality instead of generic payments advice.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流",
+      "商业/投资",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user asks for Stripe sales, refunds, MRR, or recent customer activity",
+      "user asks whether team billing, per-seat billing, or quota stacking is real in code",
+      "user wants competitor pricing comparisons or pricing-model benchmarks",
+      "the question mixes revenue facts with product implementation truth"
+    ],
+    "filePath": "/ecc/finance-billing-ops/SKILL.md"
+  },
+  {
+    "id": "foundation-models-on-device",
+    "name": "foundation-models-on-device",
+    "description": "Apple FoundationModels framework for on-device LLM — text generation, guided generation with @Generable, tool calling, and snapshot streaming in iOS 26+.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building AI-powered features using Apple Intelligence on-device",
+      "Generating or summarizing text without cloud dependency",
+      "Extracting structured data from natural language input",
+      "Implementing custom tool calling for domain-specific AI actions",
+      "Streaming structured responses for real-time UI updates"
+    ],
+    "filePath": "/ecc/foundation-models-on-device/SKILL.md"
+  },
+  {
+    "id": "frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "前端",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building React components (composition, props, rendering)",
+      "Managing state (useState, useReducer, Zustand, Context)",
+      "Implementing data fetching (SWR, React Query, server components)",
+      "Optimizing performance (memoization, virtualization, code splitting)",
+      "Working with forms (validation, controlled inputs, Zod schemas)"
+    ],
+    "filePath": "/ecc/frontend-patterns/SKILL.md"
+  },
+  {
+    "id": "frontend-slides",
+    "name": "frontend-slides",
+    "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "前端",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Creating a talk deck, pitch deck, workshop deck, or internal presentation",
+      "Converting `.ppt` or `.pptx` slides into an HTML presentation",
+      "Improving an existing HTML presentation's layout, motion, or typography",
+      "Exploring presentation styles with a user who does not know their design preference yet"
+    ],
+    "filePath": "/ecc/frontend-slides/SKILL.md"
+  },
+  {
+    "id": "github-ops",
+    "name": "github-ops",
+    "description": "GitHub repository operations, automation, and management. Issue triage, PR management, CI/CD operations, release management, and security monitoring using the gh CLI. Use when the user wants to manage GitHub issues, PRs, CI status, releases, contributors, stale items, or any GitHub operational task beyond simple git commands.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Triaging issues (classifying, labeling, responding, deduplicating)",
+      "Managing PRs (review status, CI checks, stale PRs, merge readiness)",
+      "Debugging CI/CD failures",
+      "Preparing releases and changelogs",
+      "Monitoring Dependabot and security alerts"
+    ],
+    "filePath": "/ecc/github-ops/SKILL.md"
+  },
+  {
+    "id": "golang-patterns",
+    "name": "golang-patterns",
+    "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Go code",
+      "Reviewing Go code",
+      "Refactoring existing Go code",
+      "Designing Go packages/modules"
+    ],
+    "filePath": "/ecc/golang-patterns/SKILL.md"
+  },
+  {
+    "id": "golang-testing",
+    "name": "golang-testing",
+    "description": "Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage. Follows TDD methodology with idiomatic Go practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Go functions or methods",
+      "Adding test coverage to existing code",
+      "Creating benchmarks for performance-critical code",
+      "Implementing fuzz tests for input validation",
+      "Following TDD workflow in Go projects"
+    ],
+    "filePath": "/ecc/golang-testing/SKILL.md"
+  },
+  {
+    "id": "google-workspace-ops",
+    "name": "google-workspace-ops",
+    "description": "Operate across Google Drive, Docs, Sheets, and Slides as one workflow surface for plans, trackers, decks, and shared documents. Use when the user needs to find, summarize, edit, migrate, or clean up Google Workspace assets without dropping to raw tool calls.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "设计/视觉",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User needs to find a doc, sheet, or deck and update it in place",
+      "Consolidating plans, trackers, notes, or customer lists stored in Google Drive",
+      "Cleaning or restructuring a shared spreadsheet",
+      "Importing, repairing, or reformatting a Google Slides deck",
+      "Producing summaries from Docs, Sheets, or Slides for decision-making"
+    ],
+    "filePath": "/ecc/google-workspace-ops/SKILL.md"
+  },
+  {
+    "id": "healthcare-phi-compliance",
+    "name": "healthcare-phi-compliance",
+    "description": "Protected Health Information (PHI) and Personally Identifiable Information (PII) compliance patterns for healthcare applications. Covers data classification, access control, audit trails, encryption, and common leak vectors.",
+    "origin": "Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "数据/存储",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building any feature that touches patient records",
+      "Implementing access control or authentication for clinical systems",
+      "Designing database schemas for healthcare data",
+      "Building APIs that return patient or clinician data",
+      "Implementing audit trails or logging"
+    ],
+    "filePath": "/ecc/healthcare-phi-compliance/SKILL.md"
+  },
+  {
+    "id": "hipaa-compliance",
+    "name": "hipaa-compliance",
+    "description": "HIPAA-specific entrypoint for healthcare privacy and security work. Use when a task is explicitly framed around HIPAA, PHI handling, covered entities, BAAs, breach posture, or US healthcare compliance requirements.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "The request explicitly mentions HIPAA, PHI, covered entities, business associates, or BAAs",
+      "Building or reviewing US healthcare software that stores, processes, exports, or transmits PHI",
+      "Assessing whether logging, analytics, LLM prompts, storage, or support workflows create HIPAA exposure",
+      "Designing patient-facing or clinician-facing systems where minimum necessary access and auditability matter"
+    ],
+    "filePath": "/ecc/hipaa-compliance/SKILL.md"
+  },
+  {
+    "id": "homelab-network-setup",
+    "name": "homelab-network-setup",
+    "description": "Practical home and homelab network planning for gateways, switches, access points, IP ranges, DHCP reservations, DNS, cabling, and common beginner mistakes.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Planning a new home network or redesigning an ISP-router-only setup.",
+      "Choosing gateway, switch, and access point roles.",
+      "Designing IP ranges, DHCP scopes, static reservations, and DNS.",
+      "Preparing for future VLANs, Pi-hole, NAS, lab servers, or VPN access.",
+      "Troubleshooting a new network that has double NAT, unstable Wi-Fi, or changing"
+    ],
+    "filePath": "/ecc/homelab-network-setup/SKILL.md"
+  },
+  {
+    "id": "hookify-rules",
+    "name": "hookify-rules",
+    "description": "This skill should be used when the user asks to create a hookify rule, write a hook rule, configure hookify, add a hookify rule, or needs guidance on hookify rule syntax and patterns.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/hookify-rules/SKILL.md"
+  },
+  {
+    "id": "inventory-demand-planning",
+    "name": "inventory-demand-planning",
+    "description": "Codified expertise for demand forecasting, safety stock optimization, replenishment planning, and promotional lift estimation at multi-location retailers. Informed by demand planners with 15+ years experience managing hundreds of SKUs. Includes forecasting method selection, ABC/XYZ analysis, seasonal transition management, and vendor negotiation frameworks. Use when forecasting demand, setting safety stock, planning replenishment, managing promotions, or optimizing inventory levels.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "其他"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Generating or reviewing demand forecasts for existing or new SKUs",
+      "Setting safety stock levels based on demand variability and service level targets",
+      "Planning replenishment for seasonal transitions, promotions, or new product launches",
+      "Evaluating forecast accuracy and adjusting models or overrides",
+      "Making buy decisions under supplier MOQ constraints or lead time changes"
+    ],
+    "filePath": "/ecc/inventory-demand-planning/SKILL.md"
+  },
+  {
+    "id": "investor-materials",
+    "name": "investor-materials",
+    "description": "Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials. Use when the user needs investor-facing documents, projections, use-of-funds tables, milestone plans, or materials that must stay internally consistent across multiple fundraising assets.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "creating or revising a pitch deck",
+      "writing an investor memo or one-pager",
+      "building a financial model, milestone plan, or use-of-funds table",
+      "answering accelerator or incubator application questions",
+      "aligning multiple fundraising docs around one source of truth"
+    ],
+    "filePath": "/ecc/investor-materials/SKILL.md"
+  },
+  {
+    "id": "investor-outreach",
+    "name": "investor-outreach",
+    "description": "Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user wants outreach to angels, VCs, strategic investors, or accelerators and needs concise, personalized, investor-facing messaging.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "商业/投资",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "writing a cold email to an investor",
+      "drafting a warm intro request",
+      "sending follow-ups after a meeting or no response",
+      "writing investor updates during a process",
+      "tailoring outreach based on fund thesis or partner fit"
+    ],
+    "filePath": "/ecc/investor-outreach/SKILL.md"
+  },
+  {
+    "id": "iterative-retrieval",
+    "name": "iterative-retrieval",
+    "description": "Pattern for progressively refining context retrieval to solve the subagent context problem",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Spawning subagents that need codebase context they cannot predict upfront",
+      "Building multi-agent workflows where context is progressively refined",
+      "Encountering \"context too large\" or \"missing context\" failures in agent tasks",
+      "Designing RAG-like retrieval pipelines for code exploration",
+      "Optimizing token usage in agent orchestration"
+    ],
+    "filePath": "/ecc/iterative-retrieval/SKILL.md"
+  },
+  {
+    "id": "java-coding-standards",
+    "name": "java-coding-standards",
+    "description": "Java coding standards for Spring Boot services: naming, immutability, Optional usage, streams, exceptions, generics, and project layout.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing or reviewing Java code in Spring Boot projects",
+      "Enforcing naming, immutability, or exception handling conventions",
+      "Working with records, sealed classes, or pattern matching (Java 17+)",
+      "Reviewing use of Optional, streams, or generics",
+      "Structuring packages and project layout"
+    ],
+    "filePath": "/ecc/java-coding-standards/SKILL.md"
+  },
+  {
+    "id": "jira-integration",
+    "name": "jira-integration",
+    "description": "Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning issues. Provides Jira API patterns via MCP or direct REST calls.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计",
+      "设计/视觉",
+      "学习/进化",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Fetching a Jira ticket to understand requirements",
+      "Extracting testable acceptance criteria from a ticket",
+      "Adding progress comments to a Jira issue",
+      "Transitioning a ticket status (To Do → In Progress → Done)",
+      "Linking merge requests or branches to a Jira issue"
+    ],
+    "filePath": "/ecc/jira-integration/SKILL.md"
+  },
+  {
+    "id": "jpa-patterns",
+    "name": "jpa-patterns",
+    "description": "JPA/Hibernate patterns for entity design, relationships, query optimization, transactions, auditing, indexing, pagination, and pooling in Spring Boot.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Designing JPA entities and table mappings",
+      "Defining relationships (@OneToMany, @ManyToOne, @ManyToMany)",
+      "Optimizing queries (N+1 prevention, fetch strategies, projections)",
+      "Configuring transactions, auditing, or soft deletes",
+      "Setting up pagination, sorting, or custom repository methods"
+    ],
+    "filePath": "/ecc/jpa-patterns/SKILL.md"
+  },
+  {
+    "id": "knowledge-ops",
+    "name": "knowledge-ops",
+    "description": "Knowledge base management, ingestion, sync, and retrieval across multiple storage layers (local files, MCP memory, vector stores, Git repos). Use when the user wants to save, organize, sync, deduplicate, or search across their knowledge systems.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to save information to their knowledge base",
+      "Ingesting documents, conversations, or data into structured storage",
+      "Syncing knowledge across systems (local files, MCP memory, Supabase, Git repos)",
+      "Deduplicating or organizing existing knowledge",
+      "User says \"save this to KB\", \"sync knowledge\", \"what do I know about X\", \"ingest this\", \"update the knowledge base\""
+    ],
+    "filePath": "/ecc/knowledge-ops/SKILL.md"
+  },
+  {
+    "id": "kotlin-coroutines-flows",
+    "name": "kotlin-coroutines-flows",
+    "description": "Kotlin Coroutines and Flow patterns for Android and KMP — structured concurrency, Flow operators, StateFlow, error handling, and testing.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing async code with Kotlin coroutines",
+      "Using Flow, StateFlow, or SharedFlow for reactive data",
+      "Handling concurrent operations (parallel loading, debounce, retry)",
+      "Testing coroutines and Flows",
+      "Managing coroutine scopes and cancellation"
+    ],
+    "filePath": "/ecc/kotlin-coroutines-flows/SKILL.md"
+  },
+  {
+    "id": "kotlin-exposed-patterns",
+    "name": "kotlin-exposed-patterns",
+    "description": "JetBrains Exposed ORM patterns including DSL queries, DAO pattern, transactions, HikariCP connection pooling, Flyway migrations, and repository pattern.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up database access with Exposed",
+      "Writing SQL queries using Exposed DSL or DAO",
+      "Configuring connection pooling with HikariCP",
+      "Creating database migrations with Flyway",
+      "Implementing the repository pattern with Exposed"
+    ],
+    "filePath": "/ecc/kotlin-exposed-patterns/SKILL.md"
+  },
+  {
+    "id": "kotlin-ktor-patterns",
+    "name": "kotlin-ktor-patterns",
+    "description": "Ktor server patterns including routing DSL, plugins, authentication, Koin DI, kotlinx.serialization, WebSockets, and testApplication testing.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "安全"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Ktor HTTP servers",
+      "Configuring Ktor plugins (Auth, CORS, ContentNegotiation, StatusPages)",
+      "Implementing REST APIs with Ktor",
+      "Setting up dependency injection with Koin",
+      "Writing Ktor integration tests with testApplication"
+    ],
+    "filePath": "/ecc/kotlin-ktor-patterns/SKILL.md"
+  },
+  {
+    "id": "kotlin-patterns",
+    "name": "kotlin-patterns",
+    "description": "Idiomatic Kotlin patterns, best practices, and conventions for building robust, efficient, and maintainable Kotlin applications with coroutines, null safety, and DSL builders.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Kotlin code",
+      "Reviewing Kotlin code",
+      "Refactoring existing Kotlin code",
+      "Designing Kotlin modules or libraries",
+      "Configuring Gradle Kotlin DSL builds"
+    ],
+    "filePath": "/ecc/kotlin-patterns/SKILL.md"
+  },
+  {
+    "id": "kotlin-testing",
+    "name": "kotlin-testing",
+    "description": "Kotlin testing patterns with Kotest, MockK, coroutine testing, property-based testing, and Kover coverage. Follows TDD methodology with idiomatic Kotlin practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Kotlin functions or classes",
+      "Adding test coverage to existing Kotlin code",
+      "Implementing property-based tests",
+      "Following TDD workflow in Kotlin projects",
+      "Configuring Kover for code coverage"
+    ],
+    "filePath": "/ecc/kotlin-testing/SKILL.md"
+  },
+  {
+    "id": "laravel-patterns",
+    "name": "laravel-patterns",
+    "description": "Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Laravel web applications or APIs",
+      "Structuring controllers, services, and domain logic",
+      "Working with Eloquent models and relationships",
+      "Designing APIs with resources and pagination",
+      "Adding queues, events, caching, and background jobs"
+    ],
+    "filePath": "/ecc/laravel-patterns/SKILL.md"
+  },
+  {
+    "id": "laravel-plugin-discovery",
+    "name": "laravel-plugin-discovery",
+    "description": "Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to find Laravel packages for a specific feature (e.g. \"auth\", \"permissions\", \"admin panel\")",
+      "User asks \"what package should I use for...\" or \"is there a Laravel package for...\"",
+      "User wants to check if a package is actively maintained",
+      "User needs to verify Laravel version compatibility",
+      "User wants to assess package health before adding to a project"
+    ],
+    "filePath": "/ecc/laravel-plugin-discovery/SKILL.md"
+  },
+  {
+    "id": "laravel-security",
+    "name": "laravel-security",
+    "description": "Laravel security best practices for authn/authz, validation, CSRF, mass assignment, file uploads, secrets, rate limiting, and secure deployment.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "安全",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Adding authentication or authorization",
+      "Handling user input and file uploads",
+      "Building new API endpoints",
+      "Managing secrets and environment settings",
+      "Hardening production deployments"
+    ],
+    "filePath": "/ecc/laravel-security/SKILL.md"
+  },
+  {
+    "id": "laravel-tdd",
+    "name": "laravel-tdd",
+    "description": "Test-driven development for Laravel with PHPUnit and Pest, factories, database testing, fakes, and coverage targets.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "New features or endpoints in Laravel",
+      "Bug fixes or refactors",
+      "Testing Eloquent models, policies, jobs, and notifications",
+      "Prefer Pest for new tests unless the project already standardizes on PHPUnit"
+    ],
+    "filePath": "/ecc/laravel-tdd/SKILL.md"
+  },
+  {
+    "id": "laravel-verification",
+    "name": "laravel-verification",
+    "description": "Verification loop for Laravel projects: env checks, linting, static analysis, tests with coverage, security scans, and deployment readiness.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "部署/运维",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Before opening a pull request for a Laravel project",
+      "After major refactors or dependency upgrades",
+      "Pre-deployment verification for staging or production",
+      "Running full lint -> test -> security -> deploy readiness pipeline"
+    ],
+    "filePath": "/ecc/laravel-verification/SKILL.md"
+  },
+  {
+    "id": "lead-intelligence",
+    "name": "lead-intelligence",
+    "description": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, source-derived voice modeling, and channel-specific outreach across email, LinkedIn, and X. Use when the user wants to find, qualify, and reach high-value contacts.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to find leads or prospects in a specific industry",
+      "Building an outreach list for partnerships, sales, or fundraising",
+      "Researching who to reach out to and the best path to reach them",
+      "User says \"find leads\", \"outreach list\", \"who should I reach out to\", \"warm intros\"",
+      "Needs to score or rank a list of contacts by relevance"
+    ],
+    "filePath": "/ecc/lead-intelligence/SKILL.md"
+  },
+  {
+    "id": "liquid-glass-design",
+    "name": "liquid-glass-design",
+    "description": "iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building or updating apps for iOS 26+ with the new design language",
+      "Implementing glass-style buttons, cards, toolbars, or containers",
+      "Creating morphing transitions between glass elements",
+      "Applying Liquid Glass effects to widgets",
+      "Migrating existing blur/material effects to the new Liquid Glass API"
+    ],
+    "filePath": "/ecc/liquid-glass-design/SKILL.md"
+  },
+  {
+    "id": "llm-trading-agent-security",
+    "name": "llm-trading-agent-security",
+    "description": "Security patterns for autonomous trading agents with wallet or transaction authority. Covers prompt injection, spend limits, pre-send simulation, circuit breakers, MEV protection, and key handling.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building an AI agent that signs and sends transactions",
+      "Auditing a trading bot or on-chain execution assistant",
+      "Designing wallet key management for an agent",
+      "Giving an LLM access to order placement, swaps, or treasury operations"
+    ],
+    "filePath": "/ecc/llm-trading-agent-security/SKILL.md"
+  },
+  {
+    "id": "logistics-exception-management",
+    "name": "logistics-exception-management",
+    "description": "Codified expertise for handling freight exceptions, shipment delays, damages, losses, and carrier disputes. Informed by logistics professionals with 15+ years operational experience. Includes escalation protocols, carrier-specific behaviors, claims procedures, and judgment frameworks. Use when handling shipping exceptions, freight claims, delivery issues, or carrier disputes.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Shipment is delayed, damaged, lost, or refused at delivery",
+      "Carrier dispute over liability, accessorial charges, or detention claims",
+      "Customer escalation due to missed delivery window or incorrect order",
+      "Filing or managing freight claims with carriers or insurers",
+      "Building exception handling SOPs or escalation protocols"
+    ],
+    "filePath": "/ecc/logistics-exception-management/SKILL.md"
+  },
+  {
+    "id": "manim-video",
+    "name": "manim-video",
+    "description": "Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the wider ECC video stack if needed. Use when the user wants a clean animated explainer rather than a generic talking-head script.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants a technical explainer animation",
+      "the concept is a graph, workflow, architecture, metric progression, or system diagram",
+      "the user wants a short product or launch explainer for X or a landing page",
+      "the visual should feel precise instead of generically cinematic"
+    ],
+    "filePath": "/ecc/manim-video/SKILL.md"
+  },
+  {
+    "id": "market-research",
+    "name": "market-research",
+    "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "researching a market, category, company, investor, or technology trend",
+      "building TAM/SAM/SOM estimates",
+      "comparing competitors or adjacent products",
+      "preparing investor dossiers before outreach",
+      "pressure-testing a thesis before building, funding, or entering a market"
+    ],
+    "filePath": "/ecc/market-research/SKILL.md"
+  },
+  {
+    "id": "mcp-server-patterns",
+    "name": "mcp-server-patterns",
+    "description": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/mcp-server-patterns/SKILL.md"
+  },
+  {
+    "id": "messages-ops",
+    "name": "messages-ops",
+    "description": "Evidence-first live messaging workflow for ECC. Use when the user wants to read texts or DMs, recover a recent one-time code, inspect a thread before replying, or prove which message source was actually checked.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user says \"read my messages\", \"check texts\", \"look in DMs\", or \"find the code\"",
+      "the task depends on a live thread or a recent code delivered to a local messaging surface",
+      "the user wants proof of which source or thread was inspected"
+    ],
+    "filePath": "/ecc/messages-ops/SKILL.md"
+  },
+  {
+    "id": "mysql-patterns",
+    "name": "mysql-patterns",
+    "description": "MySQL and MariaDB schema, query, indexing, transaction, replication, and connection-pool patterns for production backends.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/mysql-patterns/SKILL.md"
+  },
+  {
+    "id": "nanoclaw-repl",
+    "name": "nanoclaw-repl",
+    "description": "Operate and extend NanoClaw v2, ECC's zero-dependency session-aware REPL built on claude -p.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/nanoclaw-repl/SKILL.md"
+  },
+  {
+    "id": "nestjs-patterns",
+    "name": "nestjs-patterns",
+    "description": "NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building NestJS APIs or services",
+      "Structuring modules, controllers, and providers",
+      "Adding DTO validation, guards, interceptors, or exception filters",
+      "Configuring environment-aware settings and database integrations",
+      "Testing NestJS units or HTTP endpoints"
+    ],
+    "filePath": "/ecc/nestjs-patterns/SKILL.md"
+  },
+  {
+    "id": "netmiko-ssh-automation",
+    "name": "netmiko-ssh-automation",
+    "description": "Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "网络",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Collecting `show` command output across routers, switches, or firewalls.",
+      "Building a small audit script for interface, routing, or config evidence.",
+      "Adding timeouts and exception handling to network SSH scripts.",
+      "Parsing command output with TextFSM when a template exists.",
+      "Reviewing automation before it touches production devices."
+    ],
+    "filePath": "/ecc/netmiko-ssh-automation/SKILL.md"
+  },
+  {
+    "id": "network-bgp-diagnostics",
+    "name": "network-bgp-diagnostics",
+    "description": "Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "BGP neighbors are stuck in Idle, Connect, Active, OpenSent, or OpenConfirm.",
+      "A session is Established but expected prefixes are missing.",
+      "A route-map, prefix-list, max-prefix limit, or AS path policy may be filtering",
+      "You need before/after evidence for a BGP change.",
+      "You are reviewing automation that parses BGP summary output."
+    ],
+    "filePath": "/ecc/network-bgp-diagnostics/SKILL.md"
+  },
+  {
+    "id": "network-config-validation",
+    "name": "network-config-validation",
+    "description": "Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Reviewing Cisco IOS or IOS-XE style snippets before deployment.",
+      "Auditing generated config from scripts or templates.",
+      "Looking for dangerous commands, duplicate IP addresses, or subnet overlaps.",
+      "Checking whether ACLs, route-maps, prefix-lists, or line policies are referenced",
+      "Building lightweight pre-flight scripts for network automation."
+    ],
+    "filePath": "/ecc/network-config-validation/SKILL.md"
+  },
+  {
+    "id": "network-interface-health",
+    "name": "network-interface-health",
+    "description": "Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉",
+      "网络",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "A host or VLAN has packet loss, latency spikes, or intermittent reachability.",
+      "A switch or router interface shows CRCs, runts, giants, drops, resets, or flaps.",
+      "You need to compare both ends of a link before replacing hardware.",
+      "A change window needs before/after interface counter evidence.",
+      "Monitoring reports rising `ifInErrors`, `ifOutErrors`, or `ifOutDiscards`."
+    ],
+    "filePath": "/ecc/network-interface-health/SKILL.md"
+  },
+  {
+    "id": "nodejs-keccak256",
+    "name": "nodejs-keccak256",
+    "description": "Prevent Ethereum hashing bugs in JavaScript and TypeScript. Node's sha3-256 is NIST SHA3, not Ethereum Keccak-256, and silently breaks selectors, signatures, storage slots, and address derivation.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Computing Ethereum function selectors or event topics",
+      "Building EIP-712, signature, Merkle, or storage-slot helpers in JS/TS",
+      "Reviewing any code that hashes Ethereum data with Node crypto directly"
+    ],
+    "filePath": "/ecc/nodejs-keccak256/SKILL.md"
+  },
+  {
+    "id": "nutrient-document-processing",
+    "name": "nutrient-document-processing",
+    "description": "Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API. Works with PDFs, DOCX, XLSX, PPTX, HTML, and images.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Converting documents between formats (PDF, DOCX, XLSX, PPTX, HTML, images)",
+      "Extracting text, tables, or key-value pairs from PDFs",
+      "OCR on scanned documents or images",
+      "Redacting PII before sharing documents",
+      "Adding watermarks to drafts or confidential documents"
+    ],
+    "filePath": "/ecc/nutrient-document-processing/SKILL.md"
+  },
+  {
+    "id": "perl-patterns",
+    "name": "perl-patterns",
+    "description": "Modern Perl 5.36+ idioms, best practices, and conventions for building robust, maintainable Perl applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Perl code or modules",
+      "Reviewing Perl code for idiom compliance",
+      "Refactoring legacy Perl to modern standards",
+      "Designing Perl module architecture",
+      "Migrating pre-5.36 code to modern Perl"
+    ],
+    "filePath": "/ecc/perl-patterns/SKILL.md"
+  },
+  {
+    "id": "perl-security",
+    "name": "perl-security",
+    "description": "Comprehensive Perl security covering taint mode, input validation, safe process execution, DBI parameterized queries, web security (XSS/SQLi/CSRF), and perlcritic security policies.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "安全",
+      "部署/运维",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Handling user input in Perl applications",
+      "Building Perl web applications (CGI, Mojolicious, Dancer2, Catalyst)",
+      "Reviewing Perl code for security vulnerabilities",
+      "Performing file operations with user-supplied paths",
+      "Executing system commands from Perl"
+    ],
+    "filePath": "/ecc/perl-security/SKILL.md"
+  },
+  {
+    "id": "perl-testing",
+    "name": "perl-testing",
+    "description": "Perl testing patterns using Test2::V0, Test::More, prove runner, mocking, coverage with Devel::Cover, and TDD methodology.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Perl code (follow TDD: red, green, refactor)",
+      "Designing test suites for Perl modules or applications",
+      "Reviewing Perl test coverage",
+      "Setting up Perl testing infrastructure",
+      "Migrating tests from Test::More to Test2::V0"
+    ],
+    "filePath": "/ecc/perl-testing/SKILL.md"
+  },
+  {
+    "id": "plankton-code-quality",
+    "name": "plankton-code-quality",
+    "description": "Write-time code quality enforcement using Plankton — auto-formatting, linting, and Claude-powered fixes on every file edit via hooks.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "You want automatic formatting and linting on every file edit (not just at commit time)",
+      "You need defense against agents modifying linter configs to pass instead of fixing code",
+      "You want tiered model routing for fixes (Haiku for simple style, Sonnet for logic, Opus for types)",
+      "You work with multiple languages (Python, TypeScript, Shell, YAML, JSON, TOML, Markdown, Dockerfile)"
+    ],
+    "filePath": "/ecc/plankton-code-quality/SKILL.md"
+  },
+  {
+    "id": "postgres-patterns",
+    "name": "postgres-patterns",
+    "description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing SQL queries or migrations",
+      "Designing database schemas",
+      "Troubleshooting slow queries",
+      "Implementing Row Level Security",
+      "Setting up connection pooling"
+    ],
+    "filePath": "/ecc/postgres-patterns/SKILL.md"
+  },
+  {
+    "id": "product-capability",
+    "name": "product-capability",
+    "description": "Translate PRD intent, roadmap asks, or product discussions into an implementation-ready capability plan that exposes constraints, invariants, interfaces, and unresolved decisions before multi-service work starts. Use when the user needs an ECC-native PRD-to-SRS lane instead of vague planning prose.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "A PRD, roadmap item, discussion, or founder note exists, but the implementation constraints are still implicit",
+      "A feature crosses multiple services, repos, or teams and needs a capability contract before coding",
+      "Product intent is clear, but architecture, data, lifecycle, or policy implications are still fuzzy",
+      "Senior engineers keep restating the same hidden assumptions during review",
+      "You need a reusable artifact that can survive across harnesses and sessions"
+    ],
+    "filePath": "/ecc/product-capability/SKILL.md"
+  },
+  {
+    "id": "production-audit",
+    "name": "production-audit",
+    "description": "Local-evidence production readiness audit for shipped apps, pre-launch reviews, post-merge checks, and \"what breaks in prod?\" questions without sending repo data to an external audit service.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "数据/存储",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "The user asks \"is this production-ready\", \"what would break in prod\", \"what",
+      "A feature was merged and needs a pre-deploy or post-merge risk pass.",
+      "A public launch, demo, customer rollout, or investor walkthrough is close.",
+      "CI is green but the user wants production risk, not only test status.",
+      "A deployed URL, release branch, PR, or current checkout is available for"
+    ],
+    "filePath": "/ecc/production-audit/SKILL.md"
+  },
+  {
+    "id": "production-scheduling",
+    "name": "production-scheduling",
+    "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing. Informed by production schedulers with 15+ years experience. Includes TOC/drum-buffer-rope, SMED, OEE analysis, disruption response frameworks, and ERP/MES interaction patterns. Use when scheduling production, resolving bottlenecks, optimizing changeovers, responding to disruptions, or balancing manufacturing lines.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Production orders compete for constrained work centers",
+      "Disruptions (breakdown, shortage, absenteeism) require rapid re-sequencing",
+      "Changeover and campaign trade-offs need explicit economic decisions",
+      "New work orders need to be slotted into an existing schedule without destabilizing committed jobs",
+      "Shift-level bottleneck changes require drum reassignment"
+    ],
+    "filePath": "/ecc/production-scheduling/SKILL.md"
+  },
+  {
+    "id": "project-flow-ops",
+    "name": "project-flow-ops",
+    "description": "Operate execution flow across GitHub and Linear by triaging issues and pull requests, linking active work, and keeping GitHub public-facing while Linear remains the internal execution layer. Use when the user wants backlog control, PR triage, or GitHub-to-Linear coordination.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Triage open PR or issue backlogs",
+      "Decide what belongs in Linear vs what should remain GitHub-only",
+      "Link active GitHub work to internal execution lanes",
+      "Classify PRs into merge, port/rebuild, close, or park",
+      "Audit whether review comments, CI failures, or stale issues are blocking execution"
+    ],
+    "filePath": "/ecc/project-flow-ops/SKILL.md"
+  },
+  {
+    "id": "prompt-optimizer",
+    "name": "prompt-optimizer",
+    "description": "Analyze raw prompts, identify intent and gaps, match ECC components (skills/commands/agents/hooks), and output a ready-to-paste optimized prompt. Advisory role only — never executes the task itself. TRIGGER when: user says \"optimize prompt\", \"improve my prompt\", \"how to write a prompt for\", \"help me prompt\", \"rewrite this prompt\", or explicitly asks to enhance prompt quality. Also triggers on Chinese equivalents: \"优化prompt\", \"改进prompt\", \"怎么写prompt\", \"帮我优化这个指令\". DO NOT TRIGGER when: user wants the task executed directly, or says \"just do it\" / \"直接做\". DO NOT TRIGGER when user says \"优化代码\", \"优化性能\", \"optimize performance\", \"optimize this code\" — those are refactoring/performance tasks, not prompt optimization.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "Agent/工作流",
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User says \"optimize this prompt\", \"improve my prompt\", \"rewrite this prompt\"",
+      "User says \"help me write a better prompt for...\"",
+      "User says \"what's the best way to ask Claude Code to...\"",
+      "User says \"优化prompt\", \"改进prompt\", \"怎么写prompt\", \"帮我优化这个指令\"",
+      "User pastes a draft prompt and asks for feedback or enhancement"
+    ],
+    "filePath": "/ecc/prompt-optimizer/SKILL.md"
+  },
+  {
+    "id": "python-patterns",
+    "name": "python-patterns",
+    "description": "Pythonic idioms, PEP 8 standards, type hints, and best practices for building robust, efficient, and maintainable Python applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Python code",
+      "Reviewing Python code",
+      "Refactoring existing Python code",
+      "Designing Python packages/modules"
+    ],
+    "filePath": "/ecc/python-patterns/SKILL.md"
+  },
+  {
+    "id": "python-testing",
+    "name": "python-testing",
+    "description": "Python testing strategies using pytest, TDD methodology, fixtures, mocking, parametrization, and coverage requirements.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Python code (follow TDD: red, green, refactor)",
+      "Designing test suites for Python projects",
+      "Reviewing Python test coverage",
+      "Setting up testing infrastructure"
+    ],
+    "filePath": "/ecc/python-testing/SKILL.md"
+  },
+  {
+    "id": "quality-nonconformance",
+    "name": "quality-nonconformance",
+    "description": "Codified expertise for quality control, non-conformance investigation, root cause analysis, corrective action, and supplier quality management in regulated manufacturing. Informed by quality engineers with 15+ years experience across FDA, IATF 16949, and AS9100 environments. Includes NCR lifecycle management, CAPA systems, SPC interpretation, and audit methodology. Use when investigating non-conformances, performing root cause analysis, managing CAPAs, interpreting SPC data, or handling supplier quality issues.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "数据/存储",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Investigating a non-conformance (NCR) from incoming inspection, in-process, or final test",
+      "Performing root cause analysis using 5-Why, Ishikawa, or fault tree methods",
+      "Determining disposition for non-conforming material (use-as-is, rework, scrap, return to vendor)",
+      "Creating or reviewing a CAPA (Corrective and Preventive Action) plan",
+      "Interpreting SPC data and control chart signals for process stability assessment"
+    ],
+    "filePath": "/ecc/quality-nonconformance/SKILL.md"
+  },
+  {
+    "id": "ralphinho-rfc-pipeline",
+    "name": "ralphinho-rfc-pipeline",
+    "description": "RFC-driven multi-agent DAG execution pattern with quality gates, merge queues, and work unit orchestration.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/ralphinho-rfc-pipeline/SKILL.md"
+  },
+  {
+    "id": "regex-vs-llm-structured-text",
+    "name": "regex-vs-llm-structured-text",
+    "description": "Decision framework for choosing between regex and LLM when parsing structured text — start with regex, add LLM only for low-confidence edge cases.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Parsing structured text with repeating patterns (questions, forms, tables)",
+      "Deciding between regex and LLM for text extraction",
+      "Building hybrid pipelines that combine both approaches",
+      "Optimizing cost/accuracy tradeoffs in text processing"
+    ],
+    "filePath": "/ecc/regex-vs-llm-structured-text/SKILL.md"
+  },
+  {
+    "id": "remotion-video-creation",
+    "name": "remotion-video-creation",
+    "description": "Best practices for Remotion - Video creation in React. 29 domain-specific rules covering 3D, animations, audio, captions, charts, transitions, and more.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "前端",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/remotion-video-creation/SKILL.md"
+  },
+  {
+    "id": "research-ops",
+    "name": "research-ops",
+    "description": "Evidence-first current-state research workflow for ECC. Use when the user wants fresh facts, comparisons, enrichment, or a recommendation built from current public evidence and any supplied local context.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "Agent/工作流",
+      "设计/视觉",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user says \"research\", \"look up\", \"compare\", \"who should I talk to\", or \"what's the latest\"",
+      "the answer depends on current public information",
+      "the user already supplied evidence and wants it factored into a fresh recommendation",
+      "the task may be recurring enough that it should become a monitor instead of a one-off lookup"
+    ],
+    "filePath": "/ecc/research-ops/SKILL.md"
+  },
+  {
+    "id": "returns-reverse-logistics",
+    "name": "returns-reverse-logistics",
+    "description": "Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management. Informed by returns operations managers with 15+ years experience. Includes grading frameworks, disposition economics, fraud pattern recognition, and vendor recovery processes. Use when handling product returns, reverse logistics, refund decisions, return fraud detection, or warranty claims.\n",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Processing return requests and determining RMA eligibility",
+      "Inspecting returned goods and assigning condition grades for disposition",
+      "Routing disposition decisions (restock, refurbish, liquidate, scrap, RTV)",
+      "Investigating return fraud patterns or abuse of return policies",
+      "Managing warranty claims and vendor recovery chargebacks"
+    ],
+    "filePath": "/ecc/returns-reverse-logistics/SKILL.md"
+  },
+  {
+    "id": "rust-patterns",
+    "name": "rust-patterns",
+    "description": "Idiomatic Rust patterns, ownership, error handling, traits, concurrency, and best practices for building safe, performant applications.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Rust code",
+      "Reviewing Rust code",
+      "Refactoring existing Rust code",
+      "Designing crate structure and module layout"
+    ],
+    "filePath": "/ecc/rust-patterns/SKILL.md"
+  },
+  {
+    "id": "rust-testing",
+    "name": "rust-testing",
+    "description": "Rust testing patterns including unit tests, integration tests, async testing, property-based testing, mocking, and coverage. Follows TDD methodology.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Rust functions, methods, or traits",
+      "Adding test coverage to existing code",
+      "Creating benchmarks for performance-critical code",
+      "Implementing property-based tests for input validation",
+      "Following TDD workflow in Rust projects"
+    ],
+    "filePath": "/ecc/rust-testing/SKILL.md"
+  },
+  {
+    "id": "scientific-db-pubmed-database",
+    "name": "pubmed-database",
+    "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "API 设计",
+      "Agent/工作流",
+      "数据/存储",
+      "科学研究"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Searching MEDLINE or life-sciences literature.",
+      "Building PubMed queries with MeSH terms, field tags, dates, or article types.",
+      "Looking up PMIDs, abstracts, publication metadata, or related citations.",
+      "Running systematic-review search passes that need repeatable search strings.",
+      "Using NCBI E-utilities directly from Python, shell, or another HTTP client."
+    ],
+    "filePath": "/ecc/scientific-db-pubmed-database/SKILL.md"
+  },
+  {
+    "id": "scientific-thinking-literature-review",
+    "name": "literature-review",
+    "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "研究/搜索",
+      "Agent/工作流",
+      "科学研究"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building a systematic, scoping, or narrative literature review.",
+      "Synthesizing the state of the art for a research question.",
+      "Finding gaps, contradictions, or future-work directions.",
+      "Preparing citation-backed background sections for papers or reports.",
+      "Comparing evidence across peer-reviewed papers, preprints, patents, and"
+    ],
+    "filePath": "/ecc/scientific-thinking-literature-review/SKILL.md"
+  },
+  {
+    "id": "scientific-thinking-scholar-evaluation",
+    "name": "scholar-evaluation",
+    "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "部署/运维",
+      "研究/搜索",
+      "内容创作",
+      "科学研究"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Reviewing a research paper, proposal, thesis chapter, or literature review.",
+      "Checking whether claims are supported by cited evidence.",
+      "Evaluating methodology, study design, analysis, or limitations.",
+      "Comparing two or more papers for quality or relevance.",
+      "Producing structured feedback for revision."
+    ],
+    "filePath": "/ecc/scientific-thinking-scholar-evaluation/SKILL.md"
+  },
+  {
+    "id": "search-first",
+    "name": "search-first",
+    "description": "Research-before-coding workflow. Search for existing tools, libraries, and patterns before writing custom code. Invokes the researcher agent.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "内容创作",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/search-first/SKILL.md"
+  },
+  {
+    "id": "security-bounty-hunter",
+    "name": "security-bounty-hunter",
+    "description": "Hunt for exploitable, bounty-worthy security issues in repositories. Focuses on remotely reachable vulnerabilities that qualify for real reports instead of noisy local-only findings.",
+    "origin": "ECC direct-port adaptation",
+    "scope": "ecc",
+    "categories": [
+      "安全"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Scanning a repository for exploitable vulnerabilities",
+      "Preparing a Huntr, HackerOne, or similar bounty submission",
+      "Triage where the question is \"does this actually pay?\" rather than \"is this theoretically unsafe?\""
+    ],
+    "filePath": "/ecc/security-bounty-hunter/SKILL.md"
+  },
+  {
+    "id": "security-review",
+    "name": "security-review",
+    "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "安全",
+      "API 设计",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Implementing authentication or authorization",
+      "Handling user input or file uploads",
+      "Creating new API endpoints",
+      "Working with secrets or credentials",
+      "Implementing payment features"
+    ],
+    "filePath": "/ecc/security-review/SKILL.md"
+  },
+  {
+    "id": "security-scan",
+    "name": "security-scan",
+    "description": "Scan your Claude Code configuration (.claude/ directory) for security vulnerabilities, misconfigurations, and injection risks using AgentShield. Checks CLAUDE.md, settings.json, MCP servers, hooks, and agent definitions.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up a new Claude Code project",
+      "After modifying `.claude/settings.json`, `CLAUDE.md`, or MCP configs",
+      "Before committing configuration changes",
+      "When onboarding to a new repository with existing Claude Code configs",
+      "Periodic security hygiene checks"
+    ],
+    "filePath": "/ecc/security-scan/SKILL.md"
+  },
+  {
+    "id": "seo",
+    "name": "seo",
+    "description": "Audit, plan, and implement SEO improvements across technical SEO, on-page optimization, structured data, Core Web Vitals, and content strategy. Use when the user wants better search visibility, SEO remediation, schema markup, sitemap/robots work, or keyword mapping.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "内容创作",
+      "数据/存储",
+      "运营/自动化",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "auditing crawlability, indexability, canonicals, or redirects",
+      "improving title tags, meta descriptions, and heading structure",
+      "adding or validating structured data",
+      "improving Core Web Vitals",
+      "doing keyword research and mapping keywords to URLs"
+    ],
+    "filePath": "/ecc/seo/SKILL.md"
+  },
+  {
+    "id": "skill-stocktake",
+    "name": "skill-stocktake",
+    "description": "Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and Full Stocktake modes with sequential subagent batch evaluation.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "Agent/工作流",
+      "设计/视觉",
+      "学习/进化",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/skill-stocktake/SKILL.md"
+  },
+  {
+    "id": "social-graph-ranker",
+    "name": "social-graph-ranker",
+    "description": "Weighted social-graph ranking for warm intro discovery, bridge scoring, and network gap analysis across X and LinkedIn. Use when the user wants the reusable graph-ranking engine itself, not the broader outreach or network-maintenance workflow layered on top of it.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流",
+      "网络",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/social-graph-ranker/SKILL.md"
+  },
+  {
+    "id": "springboot-patterns",
+    "name": "springboot-patterns",
+    "description": "Spring Boot architecture patterns, REST API design, layered services, data access, caching, async processing, and logging. Use for Java Spring Boot backend work.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "语言/平台",
+      "API 设计",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building REST APIs with Spring MVC or WebFlux",
+      "Structuring controller → service → repository layers",
+      "Configuring Spring Data JPA, caching, or async processing",
+      "Adding validation, exception handling, or pagination",
+      "Setting up profiles for dev/staging/production environments"
+    ],
+    "filePath": "/ecc/springboot-patterns/SKILL.md"
+  },
+  {
+    "id": "springboot-security",
+    "name": "springboot-security",
+    "description": "Spring Security best practices for authn/authz, validation, CSRF, secrets, headers, rate limiting, and dependency security in Java Spring Boot services.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "语言/平台",
+      "安全"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Adding authentication (JWT, OAuth2, session-based)",
+      "Implementing authorization (@PreAuthorize, role-based access)",
+      "Validating user input (Bean Validation, custom validators)",
+      "Configuring CORS, CSRF, or security headers",
+      "Managing secrets (Vault, environment variables)"
+    ],
+    "filePath": "/ecc/springboot-security/SKILL.md"
+  },
+  {
+    "id": "springboot-tdd",
+    "name": "springboot-tdd",
+    "description": "Test-driven development for Spring Boot using JUnit 5, Mockito, MockMvc, Testcontainers, and JaCoCo. Use when adding features, fixing bugs, or refactoring.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "New features or endpoints",
+      "Bug fixes or refactors",
+      "Adding data access logic or security rules"
+    ],
+    "filePath": "/ecc/springboot-tdd/SKILL.md"
+  },
+  {
+    "id": "springboot-verification",
+    "name": "springboot-verification",
+    "description": "Verification loop for Spring Boot projects: build, static analysis, tests with coverage, security scans, and diff review before release or PR.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Before opening a pull request for a Spring Boot service",
+      "After major refactoring or dependency upgrades",
+      "Pre-deployment verification for staging or production",
+      "Running full build → lint → test → security scan pipeline",
+      "Validating test coverage meets thresholds"
+    ],
+    "filePath": "/ecc/springboot-verification/SKILL.md"
+  },
+  {
+    "id": "strategic-compact",
+    "name": "strategic-compact",
+    "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "其他"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Running long sessions that approach context limits (200K+ tokens)",
+      "Working on multi-phase tasks (research → plan → implement → test)",
+      "Switching between unrelated tasks within the same session",
+      "After completing a major milestone and starting new work",
+      "When responses slow down or become less coherent (context pressure)"
+    ],
+    "filePath": "/ecc/strategic-compact/SKILL.md"
+  },
+  {
+    "id": "swift-actor-persistence",
+    "name": "swift-actor-persistence",
+    "description": "Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building a data persistence layer in Swift 5.5+",
+      "Need thread-safe access to shared mutable state",
+      "Want to eliminate manual synchronization (locks, DispatchQueues)",
+      "Building offline-first apps with local storage"
+    ],
+    "filePath": "/ecc/swift-actor-persistence/SKILL.md"
+  },
+  {
+    "id": "swift-concurrency-6-2",
+    "name": "swift-concurrency-6-2",
+    "description": "Swift 6.2 Approachable Concurrency — single-threaded by default, @concurrent for explicit background offloading, isolated conformances for main actor types.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Migrating Swift 5.x or 6.0/6.1 projects to Swift 6.2",
+      "Resolving data-race safety compiler errors",
+      "Designing MainActor-based app architecture",
+      "Offloading CPU-intensive work to background threads",
+      "Implementing protocol conformances on MainActor-isolated types"
+    ],
+    "filePath": "/ecc/swift-concurrency-6-2/SKILL.md"
+  },
+  {
+    "id": "swift-protocol-di-testing",
+    "name": "swift-protocol-di-testing",
+    "description": "Protocol-based dependency injection for testable Swift code — mock file system, network, and external APIs using focused protocols and Swift Testing.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "API 设计",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing Swift code that accesses file system, network, or external APIs",
+      "Need to test error handling paths without triggering real failures",
+      "Building modules that work across environments (app, test, SwiftUI preview)",
+      "Designing testable architecture with Swift concurrency (actors, Sendable)"
+    ],
+    "filePath": "/ecc/swift-protocol-di-testing/SKILL.md"
+  },
+  {
+    "id": "swiftui-patterns",
+    "name": "swiftui-patterns",
+    "description": "SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices.",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "语言/平台",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building SwiftUI views and managing state (`@State`, `@Observable`, `@Binding`)",
+      "Designing navigation flows with `NavigationStack`",
+      "Structuring view models and data flow",
+      "Optimizing rendering performance for lists and complex layouts",
+      "Working with environment values and dependency injection in SwiftUI"
+    ],
+    "filePath": "/ecc/swiftui-patterns/SKILL.md"
+  },
+  {
+    "id": "tdd-workflow",
+    "name": "tdd-workflow",
+    "description": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "测试/质量",
+      "内容创作",
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new features or functionality",
+      "Fixing bugs or issues",
+      "Refactoring existing code",
+      "Adding API endpoints",
+      "Creating new components"
+    ],
+    "filePath": "/ecc/tdd-workflow/SKILL.md"
+  },
+  {
+    "id": "team-builder",
+    "name": "team-builder",
+    "description": "Interactive agent picker for composing and dispatching parallel teams",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "You have multiple agent personas (markdown files) and want to pick which ones to use for a task",
+      "You want to compose an ad-hoc team from different domains (e.g., Security + SEO + Architecture)",
+      "You want to browse what agents are available before deciding"
+    ],
+    "filePath": "/ecc/team-builder/SKILL.md"
+  },
+  {
+    "id": "terminal-ops",
+    "name": "terminal-ops",
+    "description": "Evidence-first repo execution workflow for ECC. Use when the user wants a command run, a repo checked, a CI failure debugged, or a narrow fix pushed with exact proof of what was executed and verified.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "user says \"fix\", \"debug\", \"run this\", \"check the repo\", or \"push it\"",
+      "the task depends on command output, git state, test results, or a verified local fix",
+      "the answer must distinguish changed locally, verified locally, committed, and pushed"
+    ],
+    "filePath": "/ecc/terminal-ops/SKILL.md"
+  },
+  {
+    "id": "token-budget-advisor",
+    "name": "token-budget-advisor",
+    "description": "Offers the user an informed choice about how much response depth to consume before answering. Use this skill when the user explicitly wants to control response length, depth, or token budget. TRIGGER when: \"token budget\", \"token count\", \"token usage\", \"token limit\", \"response length\", \"answer depth\", \"short version\", \"brief answer\", \"detailed answer\", \"exhaustive answer\", \"respuesta corta vs larga\", \"cuántos tokens\", \"ahorrar tokens\", \"responde al 50%\", \"dame la versión corta\", \"quiero controlar cuánto usas\", or clear variants where the user is explicitly asking to control answer size or depth. DO NOT TRIGGER when: user has already specified a level in the current session (maintain it), the request is clearly a one-word answer, or \"token\" refers to auth/session/payment tokens rather than response size.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "部署/运维",
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to control how long or detailed a response is",
+      "User mentions tokens, budget, depth, or response length",
+      "User says \"short version\", \"tldr\", \"brief\", \"al 25%\", \"exhaustive\", etc.",
+      "Any time the user wants to choose depth/detail level upfront"
+    ],
+    "filePath": "/ecc/token-budget-advisor/SKILL.md"
+  },
+  {
+    "id": "ui-demo",
+    "name": "ui-demo",
+    "description": "Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, and professional feel.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User asks for a \"demo video\", \"screen recording\", \"walkthrough\", or \"tutorial\"",
+      "User wants to showcase a feature or workflow visually",
+      "User needs a video for documentation, onboarding, or stakeholder presentation"
+    ],
+    "filePath": "/ecc/ui-demo/SKILL.md"
+  },
+  {
+    "id": "ui-to-vue",
+    "name": "ui-to-vue",
+    "description": "Use when the user has UI screenshots or design exports that need batch conversion into Vue 3 components, especially with Vant, Element Plus, or Ant Design Vue.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "前端",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "The user provides a directory of design screenshots or design-export images.",
+      "The target application is Vue 3.",
+      "The user wants a first pass of page components, shared components, and router wiring.",
+      "The user specifies Vant, Element Plus, or Ant Design Vue as the component library."
+    ],
+    "filePath": "/ecc/ui-to-vue/SKILL.md"
+  },
+  {
+    "id": "unified-notifications-ops",
+    "name": "unified-notifications-ops",
+    "description": "Operate notifications as one ECC-native workflow across GitHub, Linear, desktop alerts, hooks, and connected communication surfaces. Use when the real problem is alert routing, deduplication, escalation, or inbox collapse.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants a unified notification lane across GitHub, Linear, local hooks, desktop alerts, chat, or email",
+      "CI failures, review requests, issue updates, and operator events are arriving in disconnected places",
+      "the current setup creates noise instead of action",
+      "the user wants to consolidate overlapping notification branches or backlog proposals into one ECC-native lane",
+      "the workspace already has hooks, MCPs, or connected tools, but no coherent notification policy"
+    ],
+    "filePath": "/ecc/unified-notifications-ops/SKILL.md"
+  },
+  {
+    "id": "verification-loop",
+    "name": "verification-loop",
+    "description": "A comprehensive verification system for Claude Code sessions.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "After completing a feature or significant code change",
+      "Before creating a PR",
+      "When you want to ensure quality gates pass",
+      "After refactoring"
+    ],
+    "filePath": "/ecc/verification-loop/SKILL.md"
+  },
+  {
+    "id": "video-editing",
+    "name": "video-editing",
+    "description": "AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "内容创作",
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to edit, cut, or structure video footage",
+      "Turning long recordings into short-form content",
+      "Building vlogs, tutorials, or demo videos from raw capture",
+      "Adding overlays, subtitles, music, or voiceover to existing video",
+      "Reframing video for different platforms (YouTube, TikTok, Instagram)"
+    ],
+    "filePath": "/ecc/video-editing/SKILL.md"
+  },
+  {
+    "id": "videodb",
+    "name": "videodb",
+    "description": "See, Understand, Act on video and audio. See- ingest from local files, URLs, RTSP/live feeds, or live record desktop; return realtime context and playable stream links. Understand- extract frames, build visual/semantic/temporal indexes, and search moments with timestamps and auto-clips. Act- transcode and normalize (codec, fps, resolution, aspect ratio), perform timeline edits (subtitles, text/image overlays, branding, audio overlays, dubbing, translation), generate media assets (image, audio, video), and create real time alerts for events from live streams or desktop capture.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "研究/搜索",
+      "设计/视觉",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/videodb/SKILL.md"
+  },
+  {
+    "id": "visa-doc-translate",
+    "name": "visa-doc-translate",
+    "description": "Translate visa application documents (images) to English and create a bilingual PDF with original and translation",
+    "origin": "",
+    "scope": "ecc",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ecc/visa-doc-translate/SKILL.md"
+  },
+  {
+    "id": "workspace-surface-audit",
+    "name": "workspace-surface-audit",
+    "description": "Audit the active repo, MCP servers, plugins, connectors, env surfaces, and harness setup, then recommend the highest-value ECC-native skills, hooks, agents, and operator workflows. Use when the user wants help setting up Claude Code or understanding what capabilities are actually available in their environment.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "API 设计",
+      "Agent/工作流",
+      "学习/进化",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User says \"set up Claude Code\", \"recommend automations\", \"what plugins or MCPs should I use?\", or \"what am I missing?\"",
+      "Auditing a machine or repo before installing more skills, hooks, or connectors",
+      "Comparing official marketplace plugins against ECC-native coverage",
+      "Reviewing `.env`, `.mcp.json`, plugin settings, or connected-app surfaces to find missing workflow layers",
+      "Deciding whether a capability should be a skill, hook, agent, MCP, or external connector"
+    ],
+    "filePath": "/ecc/workspace-surface-audit/SKILL.md"
+  },
+  {
+    "id": "x-api",
+    "name": "x-api",
+    "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "安全",
+      "研究/搜索",
+      "内容创作",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to post tweets or threads programmatically",
+      "Reading timeline, mentions, or user data from X",
+      "Searching X for content, trends, or conversations",
+      "Building X integrations or bots",
+      "Analytics and engagement tracking"
+    ],
+    "filePath": "/ecc/x-api/SKILL.md"
+  },
+  {
+    "id": "exam-prep",
+    "name": "exam-prep",
+    "description": "整合大学开卷考试复习资料。当学生提供一个包含各种格式资料（PDF、PPT、DOC、MD、图片）的文件夹和一份复习大纲时，将这些资料按章节分类整合，生成紧凑排版、适合A4打印的PDF或MD文件。触发场景：开卷考试准备、复习资料整合、考试复习、整理资料打印。",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "研究/搜索",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/exam-prep/SKILL.md"
+  },
+  {
+    "id": "find-skills",
+    "name": "find-skills",
+    "description": "",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/find-skills/SKILL.md"
+  },
+  {
+    "id": "gpt-image",
+    "name": "gpt-image",
+    "description": "使用 OpenAI gpt-image-2 模型生成和编辑图片。当用户要求生成图片、画图、文生图、AI 绘画、图片编辑、修改图片、局部重绘、换背景、添加元素到图片时触发。关键词：生成图片、画一个、帮我画、图片编辑、修改图片、换背景、重绘、AI绘画、image generation、edit image。",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [
+      "Bash",
+      "Read",
+      "Write"
+    ],
+    "triggers": [],
+    "filePath": "/gpt-image/SKILL.md"
+  },
+  {
+    "id": "ian-handdrawn-ppt",
+    "name": "ian-handdrawn-ppt",
+    "description": "Create final Chinese handdrawn technical article/PPT-style page images from articles, Markdown, PDFs, DOCX files, existing slide decks, course notes, scripts, outlines, or rough ideas. Use when the user asks to turn content into PPT/PPTX/slides/courseware/课件/演示稿/配图/效果图 in a refined Chinese handdrawn technical explanation style, to plan such pages, to choose page layouts from semantic content, or to generate complete image-model pages with Chinese text baked into the final visual. Default article outputs use 21:9 covers and 16:9 body illustrations.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "内容创作",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ian-handdrawn-ppt/SKILL.md"
+  },
+  {
+    "id": "skill-creator",
+    "name": "skill-creator",
+    "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/skill-creator/SKILL.md"
+  },
+  {
+    "id": "general-purpose",
+    "name": "general-purpose",
+    "description": "通用代理，用于研究复杂问题、搜索代码和执行多步骤任务。当你搜索关键字或文件且不确定能否在第一次找到时使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "搜索关键字或文件时",
+      "执行多步骤任务时",
+      "不确定能否快速找到目标时"
+    ],
+    "filePath": "/general-purpose/AGENT.md"
+  },
+  {
+    "id": "Explore",
+    "name": "Explore",
+    "description": "快速只读搜索代理，用于定位代码。通过模式查找文件，或搜索符号和关键字回答X在哪里定义/Y被哪些文件引用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "查找文件时（如 src/components/**/*.tsx）",
+      "搜索符号或关键字时（如 functions+w+）",
+      "回答X在哪里定义或哪些文件引用了Y时"
+    ],
+    "filePath": "/Explore/AGENT.md"
+  },
+  {
+    "id": "Plan",
+    "name": "Plan",
+    "description": "软件架构代理，用于设计实现计划。当需要规划功能实现策略时使用，返回分步计划、识别关键文件并考虑架构权衡。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "规划功能实现策略时",
+      "需要分步计划时",
+      "考虑架构权衡时"
+    ],
+    "filePath": "/Plan/AGENT.md"
+  },
+  {
+    "id": "statusline-setup",
+    "name": "statusline-setup",
+    "description": "配置用户的 Claude Code 状态行设置。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "配置状态行时"
+    ],
+    "filePath": "/statusline-setup/AGENT.md"
+  },
+  {
+    "id": "code-reviewer",
+    "name": "code-reviewer",
+    "description": "专业代码审查专家。在编写或修改代码后主动使用，审查代码质量、安全性和可维护性。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量",
+      "安全"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "编写或修改代码后",
+      "提交前",
+      "审查代码质量、安全性和可维护性时"
+    ],
+    "filePath": "/code-reviewer/AGENT.md"
+  },
+  {
+    "id": "security-reviewer",
+    "name": "security-reviewer",
+    "description": "安全漏洞检测和修复专家。在编写处理用户输入、认证、API端点或敏感数据的代码后主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "安全"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "处理用户输入的代码",
+      "认证或授权代码",
+      "API端点",
+      "敏感数据处理"
+    ],
+    "filePath": "/security-reviewer/AGENT.md"
+  },
+  {
+    "id": "build-error-resolver",
+    "name": "build-error-resolver",
+    "description": "构建和TypeScript错误解决专家。当构建失败或出现类型错误时使用，只修复构建/类型错误，不做架构性编辑。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "构建失败时",
+      "TypeScript类型错误时",
+      "需要快速修复构建问题时"
+    ],
+    "filePath": "/build-error-resolver/AGENT.md"
+  },
+  {
+    "id": "planner",
+    "name": "planner",
+    "description": "专业规划专家，用于复杂功能和重构。当用户请求功能实现、架构更改或复杂重构时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "请求功能实现时",
+      "架构更改时",
+      "复杂重构时"
+    ],
+    "filePath": "/planner/AGENT.md"
+  },
+  {
+    "id": "architect",
+    "name": "architect",
+    "description": "软件架构专家，用于系统设计、可扩展性和技术决策。规划新功能、重构大型系统或做架构决策时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "规划新功能时",
+      "重构大型系统时",
+      "做架构决策时"
+    ],
+    "filePath": "/architect/AGENT.md"
+  },
+  {
+    "id": "tdd-guide",
+    "name": "tdd-guide",
+    "description": "测试驱动开发专家，强制执行先写测试的方法论。编写新功能、修复bug或重构代码时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "编写新功能时",
+      "修复bug时",
+      "重构代码时",
+      "需要80%+测试覆盖率时"
+    ],
+    "filePath": "/tdd-guide/AGENT.md"
+  },
+  {
+    "id": "e2e-runner",
+    "name": "e2e-runner",
+    "description": "端到端测试专家，使用Playwright进行关键用户流测试。生成、维护和运行E2E测试时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "关键用户流测试时",
+      "生成E2E测试时",
+      "运行E2E测试时"
+    ],
+    "filePath": "/e2e-runner/AGENT.md"
+  },
+  {
+    "id": "refactor-cleaner",
+    "name": "refactor-cleaner",
+    "description": "死代码清理和整合专家。移除未使用的代码、重复项和重构时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "移除未使用的代码时",
+      "清理重复项时",
+      "重构代码时"
+    ],
+    "filePath": "/refactor-cleaner/AGENT.md"
+  },
+  {
+    "id": "doc-updater",
+    "name": "doc-updater",
+    "description": "文档和codemap专家。更新codemap和文档时主动使用。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "更新codemap时",
+      "更新文档时",
+      "更新README和指南时"
+    ],
+    "filePath": "/doc-updater/AGENT.md"
+  },
+  {
+    "id": "code-simplifier",
+    "name": "code-simplifier",
+    "description": "简化和优化代码以提高清晰度、一致性和可维护性，同时保持行为。聚焦最近修改的代码。",
+    "origin": "Claude Code",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "简化代码时",
+      "提高代码清晰度时",
+      "保持行为的同时重构时"
+    ],
+    "filePath": "/code-simplifier/AGENT.md"
+  },
+  {
+    "id": "rule-identifier",
+    "name": "rule-identifier",
+    "description": "This skill should be used when the user asks to create a hookify rule, write a hook rule, configure hookify, add a hookify rule, or needs guidance on hookify rule syntax and patterns.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "前端"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "constraints": [],
+    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\hookify-rules\\SKILL.md"
+  },
+  {
+    "id": "pubmed-database",
+    "name": "pubmed-database",
+    "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Searching MEDLINE or life-sciences literature.",
+      "Building PubMed queries with MeSH terms, field tags, dates, or article types.",
+      "Looking up PMIDs, abstracts, publication metadata, or related citations.",
+      "Running systematic-review search passes that need repeatable search strings."
+    ],
+    "constraints": [],
+    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-db-pubmed-database\\SKILL.md"
+  },
+  {
+    "id": "literature-review",
+    "name": "literature-review",
+    "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building a systematic, scoping, or narrative literature review.",
+      "Synthesizing the state of the art for a research question.",
+      "Finding gaps, contradictions, or future-work directions.",
+      "Preparing citation-backed background sections for papers or reports."
+    ],
+    "constraints": [],
+    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-thinking-literature-review\\SKILL.md"
+  },
+  {
+    "id": "scholar-evaluation",
+    "name": "scholar-evaluation",
+    "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback.",
+    "origin": "community",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Reviewing a research paper, proposal, thesis chapter, or literature review.",
+      "Checking whether claims are supported by cited evidence.",
+      "Evaluating methodology, study design, analysis, or limitations.",
+      "Comparing two or more papers for quality or relevance."
+    ],
+    "constraints": [],
+    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-thinking-scholar-evaluation\\SKILL.md"
+  },
+  {
+    "id": "ppt-master",
+    "name": "ppt-master",
+    "description": "AI驱动的多格式SVG内容生成系统。将源文档（PDF/DOCX/URL/Markdown）转换为高质量SVG页面，并通过多角色协作导出为PPTX。当用户要求\"创建PPT\"、\"制作演示文稿\"、\"生成PPT\"时使用。",
+    "origin": "本地",
+    "scope": "top-level",
+    "categories": [
+      "内容创作",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "创建PPT时",
+      "制作演示文稿时",
+      "生成PPT时",
+      "制作课件时"
+    ],
+    "constraints": [
+      "严格执行串行流水线，每步输出是下一步的输入",
+      "阻塞步骤必须完全停止，等待用户明确响应",
+      "禁止跨阶段捆绑",
+      "禁止投机执行，不能为后续步骤预准备内容",
+      "禁止子代理SVG生成"
+    ],
+    "filePath": "D:/.AAA学习/skills/ppt/skills/ppt-master/SKILL.md"
+  },
+  {
+    "id": "bruce-doc-converter",
+    "name": "bruce-doc-converter",
+    "description": "双向文档转换工具，将Word (.docx)、Excel (.xlsx)、PowerPoint (.pptx) 和 PDF (.pdf) 转换为AI友好的Markdown，或将Markdown (.md) 转换为Word (.docx)。当用户请求文档转换、导出、读取、分析Office/PDF/Markdown文件时使用。",
+    "origin": "本地",
+    "scope": "top-level",
+    "categories": [
+      "内容创作",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "转换.docx、.xlsx、.pptx、.pdf或.md文件时",
+      "读取、总结、检查或分析Office/PDF文档时",
+      "将Markdown导出为Word时",
+      "处理上传的文档文件时"
+    ],
+    "constraints": [
+      "需要先安装bdc工具（pipx install bruce-doc-converter）",
+      "支持格式：DOCX、XLSX、PPTX、PDF、MD"
+    ],
+    "filePath": "D:/.AAA学习/skills/Bruce Doc Converter/bruce-doc-converter-skill/SKILL.md"
+  }
+]
