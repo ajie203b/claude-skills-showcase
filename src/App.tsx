@@ -8,10 +8,6 @@ import { SkillGrid } from './components/SkillGrid'
 import { Leaderboard } from './components/Leaderboard'
 import { WorkflowGrid } from './components/WorkflowGrid'
 import { useSkills } from './hooks/useSkills'
-import workflowsData from './data/workflows.json'
-import type { Workflow } from './types/skill'
-
-const workflows = workflowsData as Workflow[]
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('skills')
@@ -76,7 +72,7 @@ function App() {
             </div>
           </>
         ) : (
-          <WorkflowGrid workflows={workflows} />
+          <WorkflowGrid />
         )}
       </main>
 
