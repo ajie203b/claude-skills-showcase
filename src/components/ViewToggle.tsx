@@ -3,11 +3,7 @@ import type { ViewScope } from '../types/skill'
 interface ViewToggleProps {
   scope: ViewScope
   onScopeChange: (scope: ViewScope) => void
-  stats: {
-    topLevel: number
-    ecc: number
-    total: number
-  }
+  stats: { topLevel: number; ecc: number; total: number }
 }
 
 export function ViewToggle({ scope, onScopeChange, stats }: ViewToggleProps) {
@@ -18,21 +14,15 @@ export function ViewToggle({ scope, onScopeChange, stats }: ViewToggleProps) {
   ]
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-1.5">
       {views.map(view => (
         <button
           key={view.key}
           onClick={() => onScopeChange(view.key)}
-          className={`
-            px-4 py-2 rounded-lg font-medium transition-all duration-200
-            ${scope === view.key
-              ? 'bg-white text-purple-600 shadow-lg'
-              : 'glass-dark text-white hover:bg-white/20'
-            }
-          `}
+          className={`btn text-xs ${scope === view.key ? 'btn-active' : ''}`}
         >
           {view.label}
-          <span className="ml-2 text-sm opacity-75">({view.count})</span>
+          <span className="opacity-50">({view.count})</span>
         </button>
       ))}
     </div>
