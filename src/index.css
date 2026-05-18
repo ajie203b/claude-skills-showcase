@@ -28,6 +28,8 @@
 
   /* 字体 */
   --font-sans: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Noto Serif SC', 'KaiTi', 'STKaiti', 'SimSun', serif;
+  --font-display: 'ZCOOL XiaoWei', 'Ma Shan Zheng', 'Noto Serif SC', serif;
   --font-mono: 'JetBrains Mono', 'Cascadia Code', monospace;
 
   /* 阴影 */
@@ -83,6 +85,11 @@ body {
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 /* ===== 卡片 ===== */
@@ -232,6 +239,25 @@ body {
 .prompt-block.copied {
   border-color: var(--success);
   background: #ecfdf5;
+}
+
+/* ===== 艺术字体 ===== */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* ===== 渐变文字 ===== */
+.text-gradient {
+  background: linear-gradient(135deg, var(--indigo-600), #7c3aed, #ec4899);
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* ===== 响应式网格 ===== */

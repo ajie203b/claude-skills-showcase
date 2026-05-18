@@ -29,7 +29,7 @@ export function SearchBar({ search, onSearchChange, resultCount }: SearchBarProp
         value={inputValue}
         onChange={e => setInputValue(e.target.value)}
         placeholder="搜索技能名称、描述..."
-        className="input pl-10 pr-9"
+        className="w-full py-2 pl-10 pr-10 bg-white border border-[var(--gray-200)] rounded-lg text-sm text-[var(--gray-800)] placeholder-[var(--gray-400)] outline-none focus:border-[var(--indigo-500)] focus:ring-2 focus:ring-[var(--indigo-100)] transition-all"
       />
 
       {inputValue && (

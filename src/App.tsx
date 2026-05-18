@@ -34,43 +34,50 @@ function App() {
       <TabNav activeTab={activeTab} onTabChange={setActiveTab} />
 
       {/* 主内容区 */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {activeTab === 'skills' ? (
-          <>
-            {/* 控制面板 */}
-            <div className="card p-4 sm:p-5 mb-6">
-              <div className="flex flex-col lg:flex-row gap-4 items-start lg:items-center justify-between">
-                <ViewToggle scope={scope} onScopeChange={setScope} stats={stats} />
-                <SearchBar
-                  search={search}
-                  onSearchChange={setSearch}
-                  resultCount={stats.filtered}
-                />
+          <div className="flex flex-col lg:flex-row gap-6">
+            {/* 左侧：控制面板 + 技能网格 */}
+            <div className="flex-1 min-w-0">
+              {/* 控制面板 */}
+              <div className="card p-4 sm:p-5 mb-6">
+                <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+                  <ViewToggle scope={scope} onScopeChange={setScope} stats={stats} />
+                  <SearchBar
+                    search={search}
+                    onSearchChange={setSearch}
+                    resultCount={stats.filtered}
+                  />
+                </div>
+                <div className="mt-3 pt-3 border-t border-[var(--gray-100)]">
+                  <CategoryFilter
+                    categories={allCategories}
+                    selectedCategories={selectedCategories}
+                    onToggleCategory={toggleCategory}
+                    onClearFilters={clearFilters}
+                  />
+                </div>
               </div>
-              <div className="mt-3 pt-3 border-t border-[var(--gray-100)]">
-                <CategoryFilter
-                  categories={allCategories}
-                  selectedCategories={selectedCategories}
-                  onToggleCategory={toggleCategory}
-                  onClearFilters={clearFilters}
-                />
+
+              {/* 技能网格 */}
+              <SkillGrid skills={skills} />
+
+              {/* 底部状态 */}
+              <div className="mt-6 text-center text-xs text-[var(--gray-400)]">
+                显示 {stats.filtered} / {stats.total} 个技能
+                {selectedCategories.length > 0 && (
+                  <span> · 已选择 {selectedCategories.length} 个分类</span>
+                )}
               </div>
             </div>
 
-            {/* 排行榜 */}
-            <Leaderboard skills={skills} />
-
-            {/* 技能网格 */}
-            <SkillGrid skills={skills} />
-
-            {/* 底部状态 */}
-            <div className="mt-6 text-center text-xs text-[var(--gray-400)]">
-              显示 {stats.filtered} / {stats.total} 个技能
-              {selectedCategories.length > 0 && (
-                <span> · 已选择 {selectedCategories.length} 个分类</span>
-              )}
-            </div>
-          </>
+            {/* 右侧：排行榜（仅桌面端显示） */}
+            <aside className="hidden lg:block w-80 flex-shrink-0">
+              <div className="sticky top-[85px]">
+                <Leaderboard />
+              </div>
+            </aside>
+          </div>
         ) : (
           <WorkflowGrid />
         )}

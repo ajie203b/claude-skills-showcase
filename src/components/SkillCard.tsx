@@ -26,7 +26,7 @@ export function SkillCard({ skill }: SkillCardProps) {
       {/* 卡片头部 */}
       <div className="p-4">
         <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="text-sm font-semibold text-[var(--gray-900)] truncate leading-tight">
+          <h3 className="text-base font-bold text-[var(--gray-900)] truncate leading-tight font-serif">
             {skill.name}
           </h3>
           <span className={`tag ${skill.scope === 'top-level' ? 'tag-indigo' : 'tag-gray'} flex-shrink-0 text-[0.6rem]`}>
@@ -64,7 +64,7 @@ export function SkillCard({ skill }: SkillCardProps) {
         <div className="px-4 pb-4 border-t border-[var(--gray-100)] pt-3">
           {usageCN && (
             <div className="mb-3">
-              <h4 className="text-[0.65rem] font-semibold text-[var(--indigo-600)] uppercase tracking-wider mb-1">
+              <h4 className="text-xs font-bold text-[var(--indigo-600)] uppercase tracking-wider mb-1 font-display">
                 使用方法
               </h4>
               <p className="text-sm text-[var(--gray-600)] leading-relaxed">{usageCN}</p>
@@ -73,7 +73,7 @@ export function SkillCard({ skill }: SkillCardProps) {
 
           {triggersCN.length > 0 && (
             <div className="mb-3">
-              <h4 className="text-[0.65rem] font-semibold text-[var(--warning)] uppercase tracking-wider mb-1">
+              <h4 className="text-xs font-bold text-[var(--warning)] uppercase tracking-wider mb-1 font-display">
                 触发条件
               </h4>
               <ul className="space-y-1">
@@ -89,7 +89,7 @@ export function SkillCard({ skill }: SkillCardProps) {
 
           {skill.allowedTools.length > 0 && (
             <div className="mb-3">
-              <h4 className="text-[0.65rem] font-semibold text-[var(--gray-500)] uppercase tracking-wider mb-1">
+              <h4 className="text-xs font-bold text-[var(--gray-500)] uppercase tracking-wider mb-1 font-display">
                 工具
               </h4>
               <div className="flex flex-wrap gap-1">
