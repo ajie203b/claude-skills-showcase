@@ -37,7 +37,7 @@ export function Leaderboard() {
 
     items.sort((a, b) => b.usage - a.usage)
     items.forEach((item, index) => { item.rank = index + 1 })
-    return items.slice(0, 12)
+    return items.slice(0, 15)
   }, [])
 
   if (leaderboard.length === 0) return null
@@ -46,37 +46,54 @@ export function Leaderboard() {
 
   return (
     <div className="card p-4">
-      <div className="flex items-center gap-2 mb-4">
+      {/* 标题栏 */}
+      <div className="flex items-center gap-2 mb-3">
         <span className="text-lg">🏆</span>
         <h2 className="text-sm font-bold text-[var(--gray-800)]">使用排行榜</h2>
-        <span className="ml-auto text-[0.6rem] text-[var(--gray-400)]">Top 12</span>
+        <span className="text-[0.6rem] text-[var(--gray-400)]">← 左右滑动查看更多</span>
       </div>
 
-      {/* 技能不在当前视图的提示 */}
+      {/* 提示 */}
       {tooltip && (
         <div className="mb-2 px-2 py-1.5 bg-amber-50 border border-amber-200 rounded text-[0.6rem] text-amber-700 text-center">
           "{tooltip}" 不在当前筛选视图中，请切换到"全部"查看
         </div>
       )}
 
-      <div className="space-y-0.5">
-        {leaderboard.map((item) => (
-          <div
-            key={item.name}
-            className="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-[var(--gray-50)] transition-colors cursor-pointer group"
-            onClick={() => scrollToSkill(item.name)}
-          >
-            <div className={`
-              w-5 h-5 rounded flex items-center justify-center text-[0.65rem] font-bold flex-shrink-0
-              ${item.rank <= 3 ? 'bg-amber-100 text-amber-600' : 'bg-[var(--gray-100)] text-[var(--gray-500)]'}
-            `}>
-              {item.rank}
-            </div>
-
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-1.5">
+      {/* 横向滚动容器 */}
+      <div className="overflow-x-auto pb-2 -mx-1 px-1">
+        <div className="flex gap-3" style={{ minWidth: 'min-content' }}>
+          {leaderboard.map((item) => (
+            <div
+              key={item.name}
+              onClick={() => scrollToSkill(item.name)}
+              className="flex-shrink-0 w-44 p-3 rounded-lg border border-[var(--gray-100)] hover:border-[var(--indigo-200)] hover:bg-[var(--indigo-50)] transition-all cursor-pointer group"
+            >
+              {/* 排名 + 名称 */}
+              <div className="flex items-center gap-2 mb-2">
+                <div className={`
+                  w-5 h-5 rounded flex items-center justify-center text-[0.6rem] font-bold flex-shrink-0
+                  ${item.rank <= 3 ? 'bg-amber-100 text-amber-600' : 'bg-[var(--gray-100)] text-[var(--gray-500)]'}
+                `}>
+                  {item.rank}
+                </div>
                 <span className="text-xs font-medium text-[var(--gray-700)] truncate group-hover:text-[var(--indigo-600)] transition-colors">
                   {item.name}
+                </span>
+              </div>
+
+              {/* 进度条 */}
+              <div className="h-1.5 bg-[var(--gray-100)] rounded-full overflow-hidden mb-2">
+                <div
+                  className={`h-full rounded-full transition-all duration-500 ${item.rank <= 3 ? 'bg-amber-400' : 'bg-[var(--gray-300)]'}`}
+                  style={{ width: `${(item.usage / maxUsage) * 100}%` }}
+                />
+              </div>
+
+              {/* 次数 + 标签 */}
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-[var(--gray-700)] tabular-nums">
+                  {item.usage}<span className="text-[0.55rem] text-[var(--gray-400)] ml-0.5">次</span>
                 </span>
                 {item.scope && (
                   <span className={`text-[0.5rem] px-1 py-0.5 rounded ${item.scope === 'top-level' ? 'bg-indigo-50 text-indigo-600' : 'bg-gray-100 text-gray-500'}`}>
@@ -84,20 +101,9 @@ export function Leaderboard() {
                   </span>
                 )}
               </div>
-              <div className="mt-1 h-1 bg-[var(--gray-100)] rounded-full overflow-hidden">
-                <div
-                  className={`h-full rounded-full transition-all duration-500 ${item.rank <= 3 ? 'bg-amber-400' : 'bg-[var(--gray-300)]'}`}
-                  style={{ width: `${(item.usage / maxUsage) * 100}%` }}
-                />
-              </div>
             </div>
-
-            <div className="text-right flex-shrink-0">
-              <span className="text-xs font-bold text-[var(--gray-700)] tabular-nums">{item.usage}</span>
-              <span className="text-[0.55rem] text-[var(--gray-400)] ml-0.5">次</span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )
