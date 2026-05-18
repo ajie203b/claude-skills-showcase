@@ -1,12 +1,22 @@
 {
+  "exam-prep": 170,
+  "frontend-design": 53,
+  "ian-handdrawn-ppt": 53,
+  "pptx": 18,
+  "search-first": 15,
+  "claude-api": 9,
+  "update-config": 9,
+  "Explore": 8,
+  "statusline": 8,
+  "find-skills": 8,
+  "resume-session": 8,
   "general-purpose": 7,
-  "Explore": 6,
-  "claude-api": 2,
+  "skill-creator": 3,
+  "tdd-workflow": 3,
+  "gpt-image": 3,
   "security-review": 2,
   "statusline-setup": 2,
   "Plan": 2,
-  "skill-creator": 1,
-  "exam-prep": 1,
-  "tdd-workflow": 1,
-  "build-error-resolver": 1
+  "build-error-resolver": 1,
+  "metabot": 1
 }
