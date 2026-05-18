@@ -121,7 +121,9 @@ function scanSkills(): Skill[] {
   const entries = fs.readdirSync(SKILLS_DIR, { withFileTypes: true })
 
   for (const entry of entries) {
-    if (!entry.isDirectory()) continue
+    // 支持目录和符号链接（指向目录）
+    const isDir = entry.isDirectory() || (entry.isSymbolicLink && fs.statSync(path.join(SKILLS_DIR, entry.name)).isDirectory())
+    if (!isDir) continue
 
     if (entry.name === 'ecc') {
       // 扫描 ecc 子目录
@@ -129,7 +131,8 @@ function scanSkills(): Skill[] {
       const eccEntries = fs.readdirSync(eccDir, { withFileTypes: true })
 
       for (const eccEntry of eccEntries) {
-        if (!eccEntry.isDirectory()) continue
+        const isEccDir = eccEntry.isDirectory() || (eccEntry.isSymbolicLink && fs.statSync(path.join(eccDir, eccEntry.name)).isDirectory())
+        if (!isEccDir) continue
 
         const skillFile = path.join(eccDir, eccEntry.name, 'SKILL.md')
         if (fs.existsSync(skillFile)) {

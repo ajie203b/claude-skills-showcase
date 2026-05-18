@@ -252,6 +252,22 @@
     "filePath": "/dmux-workflows/SKILL.md"
   },
   {
+    "id": "docx",
+    "name": "docx",
+    "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "设计/视觉",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/docx/SKILL.md"
+  },
+  {
     "id": "agent-harness-construction",
     "name": "agent-harness-construction",
     "description": "Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates.",
@@ -417,6 +433,28 @@
     "filePath": "/ecc/api-design/SKILL.md"
   },
   {
+    "id": "article-writing",
+    "name": "article-writing",
+    "description": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "内容创作",
+      "设计/视觉",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "drafting blog posts, essays, launch posts, guides, tutorials, or newsletter issues",
+      "turning notes, transcripts, or research into polished articles",
+      "matching an existing founder, operator, or brand voice from examples",
+      "tightening structure, pacing, and evidence in already-written long-form copy"
+    ],
+    "filePath": "/ecc/article-writing/SKILL.md"
+  },
+  {
     "id": "automation-audit-ops",
     "name": "automation-audit-ops",
     "description": "Evidence-first automation inventory and overlap audit workflow for ECC. Use when the user wants to know which jobs, hooks, connectors, MCP servers, or wrappers are live, broken, redundant, or missing before fixing anything.",
@@ -455,6 +493,28 @@
       "Implementing context persistence across loop iterations"
     ],
     "filePath": "/ecc/autonomous-loops/SKILL.md"
+  },
+  {
+    "id": "backend-patterns",
+    "name": "backend-patterns",
+    "description": "Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "API 设计",
+      "数据/存储",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Designing REST or GraphQL API endpoints",
+      "Implementing repository, service, or controller layers",
+      "Optimizing database queries (N+1, indexing, connection pooling)",
+      "Adding caching (Redis, in-memory, HTTP cache headers)",
+      "Setting up background jobs or async processing"
+    ],
+    "filePath": "/ecc/backend-patterns/SKILL.md"
   },
   {
     "id": "blueprint",
@@ -591,6 +651,28 @@
     "filePath": "/ecc/code-tour/SKILL.md"
   },
   {
+    "id": "coding-standards",
+    "name": "coding-standards",
+    "description": "Baseline cross-project coding conventions for naming, readability, immutability, and code-quality review. Use detailed frontend or backend skills for framework-specific patterns.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "前端",
+      "测试/质量",
+      "部署/运维",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Starting a new project or module",
+      "Reviewing code for quality and maintainability",
+      "Refactoring existing code to follow conventions",
+      "Enforcing naming, formatting, or structural consistency",
+      "Setting up linting, formatting, or type-checking rules"
+    ],
+    "filePath": "/ecc/coding-standards/SKILL.md"
+  },
+  {
     "id": "compose-multiplatform-patterns",
     "name": "compose-multiplatform-patterns",
     "description": "Compose Multiplatform and Jetpack Compose patterns for KMP projects — state management, navigation, theming, performance, and platform-specific UI.",
@@ -651,6 +733,27 @@
     "filePath": "/ecc/connections-optimizer/SKILL.md"
   },
   {
+    "id": "content-engine",
+    "name": "content-engine",
+    "description": "Create platform-native content systems for X, LinkedIn, TikTok, YouTube, newsletters, and repurposed multi-platform campaigns. Use when the user wants social posts, threads, scripts, content calendars, or one source asset adapted cleanly across platforms.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "writing X posts or threads",
+      "drafting LinkedIn posts or launch updates",
+      "scripting short-form video or YouTube explainers",
+      "repurposing articles, podcasts, demos, docs, or internal notes into public content",
+      "building a launch sequence or ongoing content system around a product, insight, or narrative"
+    ],
+    "filePath": "/ecc/content-engine/SKILL.md"
+  },
+  {
     "id": "content-hash-cache-pattern",
     "name": "content-hash-cache-pattern",
     "description": "Cache expensive file processing results using SHA-256 content hashes — path-independent, auto-invalidating, with service layer separation.",
@@ -702,6 +805,26 @@
       "Comparing v1 (this) vs v2 (instinct-based) approaches"
     ],
     "filePath": "/ecc/continuous-learning/SKILL.md"
+  },
+  {
+    "id": "continuous-learning-v2",
+    "name": "continuous-learning-v2",
+    "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up automatic learning from Claude Code sessions",
+      "Configuring instinct-based behavior extraction via hooks",
+      "Tuning confidence thresholds for learned behaviors",
+      "Reviewing, exporting, or importing instinct libraries",
+      "Evolving instincts into full skills, commands, or agents"
+    ],
+    "filePath": "/ecc/continuous-learning-v2/SKILL.md"
   },
   {
     "id": "cost-aware-llm-pipeline",
@@ -782,6 +905,25 @@
       "Investigating test failures or flaky behavior"
     ],
     "filePath": "/ecc/cpp-testing/SKILL.md"
+  },
+  {
+    "id": "crosspost",
+    "name": "crosspost",
+    "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "内容创作",
+      "营销/传播"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "the user wants to publish the same underlying idea across multiple platforms",
+      "a launch, update, release, or essay needs platform-specific versions",
+      "the user says \"crosspost\", \"post this everywhere\", or \"adapt this for X and LinkedIn\""
+    ],
+    "filePath": "/ecc/crosspost/SKILL.md"
   },
   {
     "id": "csharp-testing",
@@ -926,6 +1068,26 @@
     "filePath": "/ecc/database-migrations/SKILL.md"
   },
   {
+    "id": "deep-research",
+    "name": "deep-research",
+    "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "部署/运维",
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User asks to research any topic in depth",
+      "Competitive analysis, technology evaluation, or market sizing",
+      "Due diligence on companies, investors, or technologies",
+      "Any question requiring synthesis from multiple sources",
+      "User says \"research\", \"deep dive\", \"investigate\", or \"what's the current state of\""
+    ],
+    "filePath": "/ecc/deep-research/SKILL.md"
+  },
+  {
     "id": "defi-amm-security",
     "name": "defi-amm-security",
     "description": "Security checklist for Solidity AMM contracts, liquidity pools, and swap flows. Covers reentrancy, CEI ordering, donation or inflation attacks, oracle manipulation, slippage, admin controls, and integer math.",
@@ -963,6 +1125,112 @@
       "Preparing for a production release"
     ],
     "filePath": "/ecc/deployment-patterns/SKILL.md"
+  },
+  {
+    "id": "django-patterns",
+    "name": "django-patterns",
+    "description": "Django architecture patterns, REST API design with DRF, ORM best practices, caching, signals, middleware, and production-grade Django apps.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "API 设计",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Django web applications",
+      "Designing Django REST Framework APIs",
+      "Working with Django ORM and models",
+      "Setting up Django project structure",
+      "Implementing caching, signals, middleware"
+    ],
+    "filePath": "/ecc/django-patterns/SKILL.md"
+  },
+  {
+    "id": "django-security",
+    "name": "django-security",
+    "description": "Django security best practices, authentication, authorization, CSRF protection, SQL injection prevention, XSS prevention, and secure deployment configurations.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "安全",
+      "部署/运维",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up Django authentication and authorization",
+      "Implementing user permissions and roles",
+      "Configuring production security settings",
+      "Reviewing Django application for security issues",
+      "Deploying Django applications to production"
+    ],
+    "filePath": "/ecc/django-security/SKILL.md"
+  },
+  {
+    "id": "django-tdd",
+    "name": "django-tdd",
+    "description": "Django testing strategies with pytest-django, TDD methodology, factory_boy, mocking, coverage, and testing Django REST Framework APIs.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Django applications",
+      "Implementing Django REST Framework APIs",
+      "Testing Django models, views, and serializers",
+      "Setting up testing infrastructure for Django projects"
+    ],
+    "filePath": "/ecc/django-tdd/SKILL.md"
+  },
+  {
+    "id": "django-verification",
+    "name": "django-verification",
+    "description": "Verification loop for Django projects: migrations, linting, tests with coverage, security scans, and deployment readiness checks before release or PR.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "部署/运维",
+      "Agent/工作流",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Before opening a pull request for a Django project",
+      "After major model changes, migration updates, or dependency upgrades",
+      "Pre-deployment verification for staging or production",
+      "Running full environment → lint → test → security → deploy readiness pipeline",
+      "Validating migration safety and test coverage"
+    ],
+    "filePath": "/ecc/django-verification/SKILL.md"
+  },
+  {
+    "id": "dmux-workflows",
+    "name": "dmux-workflows",
+    "description": "Multi-agent orchestration using dmux (tmux pane manager for AI agents). Patterns for parallel agent workflows across Claude Code, Codex, OpenCode, and other harnesses. Use when running multiple agent sessions in parallel or coordinating multi-agent development workflows.",
+    "origin": "ECC",
+    "scope": "ecc",
+    "categories": [
+      "Agent/工作流",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Running multiple agent sessions in parallel",
+      "Coordinating work across Claude Code, Codex, and other harnesses",
+      "Complex tasks that benefit from divide-and-conquer parallelism",
+      "User says \"run in parallel\", \"split this work\", \"use dmux\", or \"multi-agent\""
+    ],
+    "filePath": "/ecc/dmux-workflows/SKILL.md"
   },
   {
     "id": "docker-patterns",
@@ -2568,21 +2836,6 @@
     "filePath": "/ecc/scientific-thinking-scholar-evaluation/SKILL.md"
   },
   {
-    "id": "search-first",
-    "name": "search-first",
-    "description": "Research-before-coding workflow. Search for existing tools, libraries, and patterns before writing custom code. Invokes the researcher agent.",
-    "origin": "ECC",
-    "scope": "ecc",
-    "categories": [
-      "研究/搜索",
-      "内容创作",
-      "Agent/工作流"
-    ],
-    "allowedTools": [],
-    "triggers": [],
-    "filePath": "/ecc/search-first/SKILL.md"
-  },
-  {
     "id": "security-bounty-hunter",
     "name": "security-bounty-hunter",
     "description": "Hunt for exploitable, bounty-worthy security issues in repositories. Focuses on remotely reachable vulnerabilities that qualify for real reports instead of noisy local-only findings.",
@@ -3133,6 +3386,45 @@
     "filePath": "/ecc/x-api/SKILL.md"
   },
   {
+    "id": "eval-harness",
+    "name": "eval-harness",
+    "description": "Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Setting up eval-driven development (EDD) for AI-assisted workflows",
+      "Defining pass/fail criteria for Claude Code task completion",
+      "Measuring agent reliability with pass@k metrics",
+      "Creating regression test suites for prompt or agent changes",
+      "Benchmarking agent performance across model versions"
+    ],
+    "filePath": "/eval-harness/SKILL.md"
+  },
+  {
+    "id": "exa-search",
+    "name": "exa-search",
+    "description": "Neural search via Exa MCP for web, code, and company research. Use when the user needs web search, code examples, company intel, people lookup, or AI-powered deep research with Exa's neural search engine.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "研究/搜索"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User needs current web information or news",
+      "Searching for code examples, API docs, or technical references",
+      "Researching companies, competitors, or market players",
+      "Finding professional profiles or people in a domain",
+      "Running background research for any development task"
+    ],
+    "filePath": "/exa-search/SKILL.md"
+  },
+  {
     "id": "exam-prep",
     "name": "exam-prep",
     "description": "整合大学开卷考试复习资料。当学生提供一个包含各种格式资料（PDF、PPT、DOC、MD、图片）的文件夹和一份复习大纲时，将这些资料按章节分类整合，生成紧凑排版、适合A4打印的PDF或MD文件。触发场景：开卷考试准备、复习资料整合、考试复习、整理资料打印。",
@@ -3147,6 +3439,47 @@
     "filePath": "/exam-prep/SKILL.md"
   },
   {
+    "id": "fal-ai-media",
+    "name": "fal-ai-media",
+    "description": "Unified media generation via fal.ai MCP — image, video, and audio. Covers text-to-image (Nano Banana), text/image-to-video (Seedance, Kling, Veo 3), text-to-speech (CSM-1B), and video-to-audio (ThinkSound). Use when the user wants to generate images, videos, or audio with AI.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to generate images from text prompts",
+      "Creating videos from text or images",
+      "Generating speech, music, or sound effects",
+      "Any media generation task",
+      "User says \"generate image\", \"create video\", \"text to speech\", \"make a thumbnail\", or similar"
+    ],
+    "filePath": "/fal-ai-media/SKILL.md"
+  },
+  {
+    "id": "fastapi-patterns",
+    "name": "fastapi-patterns",
+    "description": "FastAPI patterns for async APIs, dependency injection, Pydantic request and response models, OpenAPI docs, tests, security, and production readiness.",
+    "origin": "community",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building or reviewing a FastAPI app.",
+      "Splitting routers, schemas, dependencies, and database access.",
+      "Writing async endpoints that call a database or external service.",
+      "Adding authentication, authorization, OpenAPI docs, tests, or deployment settings.",
+      "Checking a FastAPI PR for copy-pasteable examples and production risks."
+    ],
+    "filePath": "/fastapi-patterns/SKILL.md"
+  },
+  {
     "id": "find-skills",
     "name": "find-skills",
     "description": "",
@@ -3158,6 +3491,44 @@
     "allowedTools": [],
     "triggers": [],
     "filePath": "/find-skills/SKILL.md"
+  },
+  {
+    "id": "frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "前端",
+      "测试/质量",
+      "研究/搜索",
+      "设计/视觉",
+      "学习/进化",
+      "网络"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/frontend-design/SKILL.md"
+  },
+  {
+    "id": "frontend-patterns",
+    "name": "frontend-patterns",
+    "description": "Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "前端",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building React components (composition, props, rendering)",
+      "Managing state (useState, useReducer, Zustand, Context)",
+      "Implementing data fetching (SWR, React Query, server components)",
+      "Optimizing performance (memoization, virtualization, code splitting)",
+      "Working with forms (validation, controlled inputs, Zod schemas)"
+    ],
+    "filePath": "/frontend-patterns/SKILL.md"
   },
   {
     "id": "gpt-image",
@@ -3191,6 +3562,296 @@
     "filePath": "/ian-handdrawn-ppt/SKILL.md"
   },
   {
+    "id": "investor-materials",
+    "name": "investor-materials",
+    "description": "Create and update pitch decks, one-pagers, investor memos, accelerator applications, financial models, and fundraising materials. Use when the user needs investor-facing documents, projections, use-of-funds tables, milestone plans, or materials that must stay internally consistent across multiple fundraising assets.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "creating or revising a pitch deck",
+      "writing an investor memo or one-pager",
+      "building a financial model, milestone plan, or use-of-funds table",
+      "answering accelerator or incubator application questions",
+      "aligning multiple fundraising docs around one source of truth"
+    ],
+    "filePath": "/investor-materials/SKILL.md"
+  },
+  {
+    "id": "investor-outreach",
+    "name": "investor-outreach",
+    "description": "Draft cold emails, warm intro blurbs, follow-ups, update emails, and investor communications for fundraising. Use when the user wants outreach to angels, VCs, strategic investors, or accelerators and needs concise, personalized, investor-facing messaging.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "商业/投资",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "writing a cold email to an investor",
+      "drafting a warm intro request",
+      "sending follow-ups after a meeting or no response",
+      "writing investor updates during a process",
+      "tailoring outreach based on fund thesis or partner fit"
+    ],
+    "filePath": "/investor-outreach/SKILL.md"
+  },
+  {
+    "id": "iterative-retrieval",
+    "name": "iterative-retrieval",
+    "description": "Pattern for progressively refining context retrieval to solve the subagent context problem",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "研究/搜索",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Spawning subagents that need codebase context they cannot predict upfront",
+      "Building multi-agent workflows where context is progressively refined",
+      "Encountering \"context too large\" or \"missing context\" failures in agent tasks",
+      "Designing RAG-like retrieval pipelines for code exploration",
+      "Optimizing token usage in agent orchestration"
+    ],
+    "filePath": "/iterative-retrieval/SKILL.md"
+  },
+  {
+    "id": "laravel-patterns",
+    "name": "laravel-patterns",
+    "description": "Laravel architecture patterns, routing/controllers, Eloquent ORM, service layers, queues, events, caching, and API resources for production apps.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "API 设计"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Building Laravel web applications or APIs",
+      "Structuring controllers, services, and domain logic",
+      "Working with Eloquent models and relationships",
+      "Designing APIs with resources and pagination",
+      "Adding queues, events, caching, and background jobs"
+    ],
+    "filePath": "/laravel-patterns/SKILL.md"
+  },
+  {
+    "id": "laravel-plugin-discovery",
+    "name": "laravel-plugin-discovery",
+    "description": "Discover and evaluate Laravel packages via LaraPlugins.io MCP. Use when the user wants to find plugins, check package health, or assess Laravel/PHP compatibility.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "User wants to find Laravel packages for a specific feature (e.g. \"auth\", \"permissions\", \"admin panel\")",
+      "User asks \"what package should I use for...\" or \"is there a Laravel package for...\"",
+      "User wants to check if a package is actively maintained",
+      "User needs to verify Laravel version compatibility",
+      "User wants to assess package health before adding to a project"
+    ],
+    "filePath": "/laravel-plugin-discovery/SKILL.md"
+  },
+  {
+    "id": "laravel-security",
+    "name": "laravel-security",
+    "description": "Laravel security best practices for authn/authz, validation, CSRF, mass assignment, file uploads, secrets, rate limiting, and secure deployment.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "安全",
+      "部署/运维"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Adding authentication or authorization",
+      "Handling user input and file uploads",
+      "Building new API endpoints",
+      "Managing secrets and environment settings",
+      "Hardening production deployments"
+    ],
+    "filePath": "/laravel-security/SKILL.md"
+  },
+  {
+    "id": "laravel-tdd",
+    "name": "laravel-tdd",
+    "description": "Test-driven development for Laravel with PHPUnit and Pest, factories, database testing, fakes, and coverage targets.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "New features or endpoints in Laravel",
+      "Bug fixes or refactors",
+      "Testing Eloquent models, policies, jobs, and notifications",
+      "Prefer Pest for new tests unless the project already standardizes on PHPUnit"
+    ],
+    "filePath": "/laravel-tdd/SKILL.md"
+  },
+  {
+    "id": "laravel-verification",
+    "name": "laravel-verification",
+    "description": "Verification loop for Laravel projects: env checks, linting, static analysis, tests with coverage, security scans, and deployment readiness.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "后端框架",
+      "测试/质量",
+      "安全",
+      "部署/运维",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Before opening a pull request for a Laravel project",
+      "After major refactors or dependency upgrades",
+      "Pre-deployment verification for staging or production",
+      "Running full lint -> test -> security -> deploy readiness pipeline"
+    ],
+    "filePath": "/laravel-verification/SKILL.md"
+  },
+  {
+    "id": "market-research",
+    "name": "market-research",
+    "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "部署/运维",
+      "研究/搜索",
+      "商业/投资"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "researching a market, category, company, investor, or technology trend",
+      "building TAM/SAM/SOM estimates",
+      "comparing competitors or adjacent products",
+      "preparing investor dossiers before outreach",
+      "pressure-testing a thesis before building, funding, or entering a market"
+    ],
+    "filePath": "/market-research/SKILL.md"
+  },
+  {
+    "id": "pdf-extraction",
+    "name": "pdf-extraction",
+    "description": "Extract text, tables, and metadata from PDFs using pdfplumber",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "数据/存储"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/pdf-extraction/SKILL.md"
+  },
+  {
+    "id": "pptx",
+    "name": "pptx",
+    "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "内容创作",
+      "设计/视觉",
+      "学习/进化",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/pptx/SKILL.md"
+  },
+  {
+    "id": "python-patterns",
+    "name": "python-patterns",
+    "description": "Pythonic idioms, PEP 8 standards, type hints, and best practices for building robust, efficient, and maintainable Python applications.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "语言/平台",
+      "部署/运维",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Python code",
+      "Reviewing Python code",
+      "Refactoring existing Python code",
+      "Designing Python packages/modules"
+    ],
+    "filePath": "/python-patterns/SKILL.md"
+  },
+  {
+    "id": "python-testing",
+    "name": "python-testing",
+    "description": "Python testing strategies using pytest, TDD methodology, fixtures, mocking, parametrization, and coverage requirements.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "语言/平台",
+      "测试/质量",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Writing new Python code (follow TDD: red, green, refactor)",
+      "Designing test suites for Python projects",
+      "Reviewing Python test coverage",
+      "Setting up testing infrastructure"
+    ],
+    "filePath": "/python-testing/SKILL.md"
+  },
+  {
+    "id": "search-first",
+    "name": "search-first",
+    "description": "Research-before-coding workflow. Search for existing tools, libraries, and patterns before writing custom code. Invokes the researcher agent.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "研究/搜索",
+      "内容创作",
+      "Agent/工作流"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/search-first/SKILL.md"
+  },
+  {
+    "id": "security-review",
+    "name": "security-review",
+    "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "测试/质量",
+      "安全",
+      "API 设计",
+      "学习/进化"
+    ],
+    "allowedTools": [],
+    "triggers": [
+      "Implementing authentication or authorization",
+      "Handling user input or file uploads",
+      "Creating new API endpoints",
+      "Working with secrets or credentials",
+      "Implementing payment features"
+    ],
+    "filePath": "/security-review/SKILL.md"
+  },
+  {
     "id": "skill-creator",
     "name": "skill-creator",
     "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
@@ -3205,367 +3866,158 @@
     "filePath": "/skill-creator/SKILL.md"
   },
   {
-    "id": "general-purpose",
-    "name": "general-purpose",
-    "description": "通用代理，用于研究复杂问题、搜索代码和执行多步骤任务。当你搜索关键字或文件且不确定能否在第一次找到时使用。",
-    "origin": "Claude Code",
+    "id": "strategic-compact",
+    "name": "strategic-compact",
+    "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
+    "origin": "ECC",
     "scope": "top-level",
     "categories": [
-      "Agent/工作流",
-      "研究/搜索"
+      "其他"
     ],
     "allowedTools": [],
     "triggers": [
-      "搜索关键字或文件时",
-      "执行多步骤任务时",
-      "不确定能否快速找到目标时"
+      "Running long sessions that approach context limits (200K+ tokens)",
+      "Working on multi-phase tasks (research → plan → implement → test)",
+      "Switching between unrelated tasks within the same session",
+      "After completing a major milestone and starting new work",
+      "When responses slow down or become less coherent (context pressure)"
     ],
-    "filePath": "/general-purpose/AGENT.md"
+    "filePath": "/strategic-compact/SKILL.md"
   },
   {
-    "id": "Explore",
-    "name": "Explore",
-    "description": "快速只读搜索代理，用于定位代码。通过模式查找文件，或搜索符号和关键字回答X在哪里定义/Y被哪些文件引用。",
-    "origin": "Claude Code",
+    "id": "tdd-workflow",
+    "name": "tdd-workflow",
+    "description": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests.",
+    "origin": "ECC",
     "scope": "top-level",
     "categories": [
-      "Agent/工作流",
-      "研究/搜索"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "查找文件时（如 src/components/**/*.tsx）",
-      "搜索符号或关键字时（如 functions+w+）",
-      "回答X在哪里定义或哪些文件引用了Y时"
-    ],
-    "filePath": "/Explore/AGENT.md"
-  },
-  {
-    "id": "Plan",
-    "name": "Plan",
-    "description": "软件架构代理，用于设计实现计划。当需要规划功能实现策略时使用，返回分步计划、识别关键文件并考虑架构权衡。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
+      "测试/质量",
+      "内容创作",
       "Agent/工作流",
       "学习/进化"
     ],
     "allowedTools": [],
     "triggers": [
-      "规划功能实现策略时",
-      "需要分步计划时",
-      "考虑架构权衡时"
+      "Writing new features or functionality",
+      "Fixing bugs or issues",
+      "Refactoring existing code",
+      "Adding API endpoints",
+      "Creating new components"
     ],
-    "filePath": "/Plan/AGENT.md"
+    "filePath": "/tdd-workflow/SKILL.md"
   },
   {
-    "id": "statusline-setup",
-    "name": "statusline-setup",
-    "description": "配置用户的 Claude Code 状态行设置。",
-    "origin": "Claude Code",
+    "id": "ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "前端",
+      "语言/平台",
+      "测试/质量",
+      "部署/运维",
+      "研究/搜索",
+      "内容创作",
+      "设计/视觉"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/ui-ux-pro-max/SKILL.md"
+  },
+  {
+    "id": "verification-loop",
+    "name": "verification-loop",
+    "description": "A comprehensive verification system for Claude Code sessions.",
+    "origin": "ECC",
     "scope": "top-level",
     "categories": [
       "Agent/工作流"
     ],
     "allowedTools": [],
     "triggers": [
-      "配置状态行时"
+      "After completing a feature or significant code change",
+      "Before creating a PR",
+      "When you want to ensure quality gates pass",
+      "After refactoring"
     ],
-    "filePath": "/statusline-setup/AGENT.md"
+    "filePath": "/verification-loop/SKILL.md"
   },
   {
-    "id": "code-reviewer",
-    "name": "code-reviewer",
-    "description": "专业代码审查专家。在编写或修改代码后主动使用，审查代码质量、安全性和可维护性。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "测试/质量",
-      "安全"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "编写或修改代码后",
-      "提交前",
-      "审查代码质量、安全性和可维护性时"
-    ],
-    "filePath": "/code-reviewer/AGENT.md"
-  },
-  {
-    "id": "security-reviewer",
-    "name": "security-reviewer",
-    "description": "安全漏洞检测和修复专家。在编写处理用户输入、认证、API端点或敏感数据的代码后主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "安全"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "处理用户输入的代码",
-      "认证或授权代码",
-      "API端点",
-      "敏感数据处理"
-    ],
-    "filePath": "/security-reviewer/AGENT.md"
-  },
-  {
-    "id": "build-error-resolver",
-    "name": "build-error-resolver",
-    "description": "构建和TypeScript错误解决专家。当构建失败或出现类型错误时使用，只修复构建/类型错误，不做架构性编辑。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "部署/运维"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "构建失败时",
-      "TypeScript类型错误时",
-      "需要快速修复构建问题时"
-    ],
-    "filePath": "/build-error-resolver/AGENT.md"
-  },
-  {
-    "id": "planner",
-    "name": "planner",
-    "description": "专业规划专家，用于复杂功能和重构。当用户请求功能实现、架构更改或复杂重构时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "Agent/工作流",
-      "学习/进化"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "请求功能实现时",
-      "架构更改时",
-      "复杂重构时"
-    ],
-    "filePath": "/planner/AGENT.md"
-  },
-  {
-    "id": "architect",
-    "name": "architect",
-    "description": "软件架构专家，用于系统设计、可扩展性和技术决策。规划新功能、重构大型系统或做架构决策时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "Agent/工作流",
-      "学习/进化"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "规划新功能时",
-      "重构大型系统时",
-      "做架构决策时"
-    ],
-    "filePath": "/architect/AGENT.md"
-  },
-  {
-    "id": "tdd-guide",
-    "name": "tdd-guide",
-    "description": "测试驱动开发专家，强制执行先写测试的方法论。编写新功能、修复bug或重构代码时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "测试/质量"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "编写新功能时",
-      "修复bug时",
-      "重构代码时",
-      "需要80%+测试覆盖率时"
-    ],
-    "filePath": "/tdd-guide/AGENT.md"
-  },
-  {
-    "id": "e2e-runner",
-    "name": "e2e-runner",
-    "description": "端到端测试专家，使用Playwright进行关键用户流测试。生成、维护和运行E2E测试时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "测试/质量"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "关键用户流测试时",
-      "生成E2E测试时",
-      "运行E2E测试时"
-    ],
-    "filePath": "/e2e-runner/AGENT.md"
-  },
-  {
-    "id": "refactor-cleaner",
-    "name": "refactor-cleaner",
-    "description": "死代码清理和整合专家。移除未使用的代码、重复项和重构时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "测试/质量"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "移除未使用的代码时",
-      "清理重复项时",
-      "重构代码时"
-    ],
-    "filePath": "/refactor-cleaner/AGENT.md"
-  },
-  {
-    "id": "doc-updater",
-    "name": "doc-updater",
-    "description": "文档和codemap专家。更新codemap和文档时主动使用。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "部署/运维"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "更新codemap时",
-      "更新文档时",
-      "更新README和指南时"
-    ],
-    "filePath": "/doc-updater/AGENT.md"
-  },
-  {
-    "id": "code-simplifier",
-    "name": "code-simplifier",
-    "description": "简化和优化代码以提高清晰度、一致性和可维护性，同时保持行为。聚焦最近修改的代码。",
-    "origin": "Claude Code",
-    "scope": "top-level",
-    "categories": [
-      "测试/质量"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "简化代码时",
-      "提高代码清晰度时",
-      "保持行为的同时重构时"
-    ],
-    "filePath": "/code-simplifier/AGENT.md"
-  },
-  {
-    "id": "rule-identifier",
-    "name": "rule-identifier",
-    "description": "This skill should be used when the user asks to create a hookify rule, write a hook rule, configure hookify, add a hookify rule, or needs guidance on hookify rule syntax and patterns.",
+    "id": "video-editing",
+    "name": "video-editing",
+    "description": "AI-assisted video editing workflows for cutting, structuring, and augmenting real footage. Covers the full pipeline from raw capture through FFmpeg, Remotion, ElevenLabs, fal.ai, and final polish in Descript or CapCut. Use when the user wants to edit video, cut footage, create vlogs, or build video content.",
     "origin": "ECC",
-    "scope": "ecc",
-    "categories": [
-      "前端"
-    ],
-    "allowedTools": [],
-    "triggers": [],
-    "constraints": [],
-    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\hookify-rules\\SKILL.md"
-  },
-  {
-    "id": "pubmed-database",
-    "name": "pubmed-database",
-    "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring.",
-    "origin": "community",
-    "scope": "ecc",
-    "categories": [
-      "API 设计"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "Searching MEDLINE or life-sciences literature.",
-      "Building PubMed queries with MeSH terms, field tags, dates, or article types.",
-      "Looking up PMIDs, abstracts, publication metadata, or related citations.",
-      "Running systematic-review search passes that need repeatable search strings."
-    ],
-    "constraints": [],
-    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-db-pubmed-database\\SKILL.md"
-  },
-  {
-    "id": "literature-review",
-    "name": "literature-review",
-    "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging.",
-    "origin": "community",
-    "scope": "ecc",
-    "categories": [
-      "部署/运维"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "Building a systematic, scoping, or narrative literature review.",
-      "Synthesizing the state of the art for a research question.",
-      "Finding gaps, contradictions, or future-work directions.",
-      "Preparing citation-backed background sections for papers or reports."
-    ],
-    "constraints": [],
-    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-thinking-literature-review\\SKILL.md"
-  },
-  {
-    "id": "scholar-evaluation",
-    "name": "scholar-evaluation",
-    "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback.",
-    "origin": "community",
-    "scope": "ecc",
-    "categories": [
-      "部署/运维"
-    ],
-    "allowedTools": [],
-    "triggers": [
-      "Reviewing a research paper, proposal, thesis chapter, or literature review.",
-      "Checking whether claims are supported by cited evidence.",
-      "Evaluating methodology, study design, analysis, or limitations.",
-      "Comparing two or more papers for quality or relevance."
-    ],
-    "constraints": [],
-    "filePath": "C:\\Users\\yang'jie\\.claude\\skills\\ecc\\scientific-thinking-scholar-evaluation\\SKILL.md"
-  },
-  {
-    "id": "ppt-master",
-    "name": "ppt-master",
-    "description": "AI驱动的多格式SVG内容生成系统。将源文档（PDF/DOCX/URL/Markdown）转换为高质量SVG页面，并通过多角色协作导出为PPTX。当用户要求\"创建PPT\"、\"制作演示文稿\"、\"生成PPT\"时使用。",
-    "origin": "本地",
     "scope": "top-level",
     "categories": [
       "内容创作",
+      "Agent/工作流",
       "设计/视觉"
     ],
     "allowedTools": [],
     "triggers": [
-      "创建PPT时",
-      "制作演示文稿时",
-      "生成PPT时",
-      "制作课件时"
+      "User wants to edit, cut, or structure video footage",
+      "Turning long recordings into short-form content",
+      "Building vlogs, tutorials, or demo videos from raw capture",
+      "Adding overlays, subtitles, music, or voiceover to existing video",
+      "Reframing video for different platforms (YouTube, TikTok, Instagram)"
     ],
-    "constraints": [
-      "严格执行串行流水线，每步输出是下一步的输入",
-      "阻塞步骤必须完全停止，等待用户明确响应",
-      "禁止跨阶段捆绑",
-      "禁止投机执行，不能为后续步骤预准备内容",
-      "禁止子代理SVG生成"
-    ],
-    "filePath": "D:/.AAA学习/skills/ppt/skills/ppt-master/SKILL.md"
+    "filePath": "/video-editing/SKILL.md"
   },
   {
-    "id": "bruce-doc-converter",
-    "name": "bruce-doc-converter",
-    "description": "双向文档转换工具，将Word (.docx)、Excel (.xlsx)、PowerPoint (.pptx) 和 PDF (.pdf) 转换为AI友好的Markdown，或将Markdown (.md) 转换为Word (.docx)。当用户请求文档转换、导出、读取、分析Office/PDF/Markdown文件时使用。",
-    "origin": "本地",
+    "id": "web-design-guidelines",
+    "name": "web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "origin": "",
     "scope": "top-level",
     "categories": [
+      "测试/质量",
+      "安全",
+      "设计/视觉",
+      "网络",
+      "运营/自动化"
+    ],
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/web-design-guidelines/SKILL.md"
+  },
+  {
+    "id": "x-api",
+    "name": "x-api",
+    "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",
+    "origin": "ECC",
+    "scope": "top-level",
+    "categories": [
+      "安全",
+      "研究/搜索",
       "内容创作",
-      "部署/运维"
+      "API 设计"
     ],
     "allowedTools": [],
     "triggers": [
-      "转换.docx、.xlsx、.pptx、.pdf或.md文件时",
-      "读取、总结、检查或分析Office/PDF文档时",
-      "将Markdown导出为Word时",
-      "处理上传的文档文件时"
+      "User wants to post tweets or threads programmatically",
+      "Reading timeline, mentions, or user data from X",
+      "Searching X for content, trends, or conversations",
+      "Building X integrations or bots",
+      "Analytics and engagement tracking"
     ],
-    "constraints": [
-      "需要先安装bdc工具（pipx install bruce-doc-converter）",
-      "支持格式：DOCX、XLSX、PPTX、PDF、MD"
+    "filePath": "/x-api/SKILL.md"
+  },
+  {
+    "id": "xlsx",
+    "name": "xlsx",
+    "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+    "origin": "",
+    "scope": "top-level",
+    "categories": [
+      "语言/平台",
+      "部署/运维",
+      "API 设计",
+      "数据/存储",
+      "学习/进化"
     ],
-    "filePath": "D:/.AAA学习/skills/Bruce Doc Converter/bruce-doc-converter-skill/SKILL.md"
+    "allowedTools": [],
+    "triggers": [],
+    "filePath": "/xlsx/SKILL.md"
   }
 ]
